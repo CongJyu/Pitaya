@@ -1,6 +1,6 @@
 # Pitaya
 
-👻 A Collection of Interesting Tests
+👻 A collection of interesting tests
 
 ## Pitaya 项目介绍
 
