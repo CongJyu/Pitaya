@@ -3,7 +3,7 @@
 //  EX6-Q02-01 片段编程题 小熊买糖果
 //
 //  Created by cyrain on 2021/11/15.
-//
+//  Something wrong: TLE
 
 #include <iostream>
 using namespace std;
@@ -15,18 +15,16 @@ int main() {
     cout << result << endl;
     return 0;
 }
-int getCandy(int x, int y) {
-    int result = 0, cnt = 0;
-    for (result = 0; ; result++) {
-        if ((result * 10 + y) % x == 0) {
+int getCandy(int k, int r) {
+    int num = 0;
+    for (int i = 0; ; i++) {
+        if ((10 * i + r) % k == 0) {
+            num = (10 * i + r) / k;
             break;
-        } else if (x % 10 == 0) {
-            cnt = x / 10;
-            return cnt;
-        } else {
-            continue;
+        } else if (k % 10 == 0) {
+            num = k / 10;
+            break;
         }
     }
-    cnt = (result * 10 + y) / x;
-    return cnt;
+    return num;
 }
