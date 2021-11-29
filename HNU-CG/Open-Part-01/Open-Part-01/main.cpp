@@ -8,22 +8,12 @@
 #include <iostream>
 using namespace std;
 int divideCnt(int n) {
-    int cnt = 0;
-    for (int i = 0; i <= n; i++) {
-        if (i % 2 == 0 && i != 0) continue;
-        for (int j = 0; j < n; j++) {
-            if (j % 2 == 0 && j != 0) continue;
-            for (int k = 0; k < n; k++) {
-                if (k % 2 == 0 && k != 0) continue;
-                if (i + j + k == n) {
-                    cnt++;
-                } else {
-                    continue;
-                }
-            }
-        }
-    }
-    return cnt;
+    if (n == 1) return 1;
+    if (n == 2) return 1;
+    if (n == 3) return 2;
+    if (n == 4) return 3;
+    if (n == 5) return 5;
+    return divideCnt(n - 1) + divideCnt(n - 3) + divideCnt(n - 5);
 }
 int main() {
     int n = 0;

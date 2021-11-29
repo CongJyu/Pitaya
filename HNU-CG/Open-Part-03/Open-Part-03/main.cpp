@@ -7,17 +7,19 @@
 
 #include <iostream>
 using namespace std;
-int age(int x, int y) {
-    int res = x;
-    for (int i = 0; i < 4; i++) {
-        res += y;
+int age(int n, int m, int y) {
+    n += m;
+    y++;
+    if (y < 4) {
+        return age(n, m, y);
+    } else {
+        return n + m;
     }
-    return res;
 }
 int main() {
-    int a = 0, b = 0;
+    int a, b, c = 1;
     cin >> a >> b;
-    int result = age(a, b);
-    cout << result << endl;
+    int result = age(a, b, c);
+    cout << result;
     return 0;
 }
