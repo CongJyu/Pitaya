@@ -26,12 +26,17 @@ int main() {
 void arrange(int a[], int n) {
     int * p = a, * q = a + n - 1;
     while (p < q) {
-        //  add
-        if (*p % 2 == 0 && *q % 2 == 1) {
-            Swap(p, q);
+        while (*p % 2 == 1) {
+            p++;
         }
-        p++;
-        q--;
+        while (*q % 2 == 0) {
+            q--;
+        }
+        if (p < q) {
+            swap(*p, *q);
+            p++;
+            q--;
+        }
     }
     int m;
     if (p == q) {

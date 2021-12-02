@@ -18,14 +18,16 @@ int main() {
 }
 void reverseStr(char * s) {
     char * p = s, * q = s;
+    char temp;
     while (*q) {
-        (*q)++;
+        q++;
     }
-    *q = *(s + 201);
+    q--;
     while (p < q) {
-        int tmp;
-        tmp = *p;
+        temp = *p;
         *p = *q;
-        *q = tmp;
+        *q = temp;
+        *p++;
+        *q--;
     }
 }
