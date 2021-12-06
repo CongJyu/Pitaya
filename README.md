@@ -1,6 +1,6 @@
 # Pitaya
 
-👻 A collection of Questions & Answers
+A collection of Questions & Answers
 
 ## HNU-CG Questions & Answers
 
