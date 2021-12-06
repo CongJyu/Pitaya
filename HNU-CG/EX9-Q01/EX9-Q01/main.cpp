@@ -13,7 +13,7 @@ using namespace std;
 
 struct Competitors {
     string name;
-    int score[9];
+    int score[7];
     int total;
 };
 
