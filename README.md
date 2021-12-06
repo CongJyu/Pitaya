@@ -1,10 +1,10 @@
 # Pitaya
 
-👻 A collection of Questions & Answers
+A collection of Answers
 
-## HNU-CG Questions & Answers
+## HNU-CG
 
-## SCUT-Code Questions & Answers
+## SCUT-Code
 
 ## SYSU Homework
 
