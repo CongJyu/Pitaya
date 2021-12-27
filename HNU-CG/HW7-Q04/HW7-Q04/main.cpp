@@ -7,51 +7,36 @@
 
 #include <iostream>
 using namespace std;
+
 struct Jose {
     int code;
     Jose * next;
 };
-Jose * chu;
-Jose * List(int n) {
-    Jose * head, * pre, * p;
-    head = new Jose;
-    head -> next = NULL;
-    pre = head;
-    for (int i = 1; i <= n; i++) {
-        p = new Jose;
-        p -> code = i;
-        p -> next = NULL;
-        pre -> next = p;
-        pre = p;
-    }
-    p -> next = head -> next;
-    return head;
-}
-
-void del(Jose * head, int pos) {
-    Jose * p = head;
-    Jose * l = head -> next;
-    for (int i = 1; i < pos - 1; i++) {
-        p = p -> next;
-    }
-    l = p;
-    p = p -> next;
-    l -> next = p -> next;
-    chu = l -> next;
-}
 
 int main() {
-    int n, m, cnt = 0;
-    cin >> n >> m;
-//    int t = n;
-    Jose * s = List(n);
-    while (n != 1) {
-        while (cnt != 3) cnt++;
-        del(s, cnt);
-        cnt = 0;
-        s = chu;
-        n--;
+    int nBoys, interval;
+    cin >> nBoys >> interval;
+    Jose * pJose = new Jose;
+    Jose * temp = pJose;
+    for (int i = 0; i < nBoys; i++) {
+        pJose -> code = i + 1;
+        if (i == nBoys - 1) {
+            break;
+        }
+        pJose -> next = new Jose;
+        pJose = pJose -> next;
     }
-    cout << s -> code + 1 << endl;
-    return 0;
+    pJose -> next = temp;
+    pJose = pJose -> next;
+    for (int i = 0; i < nBoys - 1; i++) {
+        for (int j = 0; j < interval - 2; j++) {
+            pJose = pJose -> next;
+        }
+        temp = pJose -> next -> next;
+        delete pJose -> next;
+        pJose -> next = temp;
+        pJose = pJose -> next;
+    }
+    cout << pJose -> code;
+    delete pJose;
 }
