@@ -26,7 +26,7 @@ int main() {
             familyn[i] += 32;
         }
     }
-    for (long long i = 0; i < size2 - 1; i++) {
+    for (long long i = 0; i < size2 - 2; i++) {
         cout << familyn[i];
     }
     for (long long i = 0; i < size1 - 1; i++) {

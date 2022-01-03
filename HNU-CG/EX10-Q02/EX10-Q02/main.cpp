@@ -16,7 +16,7 @@ public:
         no = num;
         next = NULL;
     }
-    void seNext(person *p) {
+    void setNext(person * p) {
         next = p;
     }
     int getNo() {
@@ -37,51 +37,38 @@ public:
         inQueue = num;
         out = whoOut;
         person * prv = NULL, * first = NULL;
-        for (int i = 0; i < num; i++) {
+        for (int i = 1; i <= num; i++) {
             person * p = new person(i);
-            if (i == 1) {
-                first = p;
-            }
-            if (i == from) {
-                start = p;
-            }
-            if (i > 1) {
-                prv -> seNext(p);
-            }
+            if (i == 1) first = p;
+            if (i == from) start = p;
+            if (i > 1) prv -> setNext(p);
             prv = p;
         }
-        prv -> seNext(first);
+        prv -> setNext(first);
     }
-    
     int getInQueue() {
         return inQueue;
     }
-    
     void cnt() {
         int js = out;
         person * dummy;
         js--;
-        if (js == 0) {
-            js = inQueue;
-        }
+        if (js == 0) js = inQueue;
         while (js--) {
             dummy = start;
             start = start -> getNext();
         }
-        dummy -> seNext(start -> getNext());
+        dummy -> setNext(start -> getNext());
         start = start -> getNext();
         inQueue--;
     }
-    
     person * getStart() {
         return start;
     }
-    
     ~cycle() {
         delete start;
     }
 };
-
 int main() {
     int n, k, m;
     cin >> n >> k >> m;
@@ -91,7 +78,6 @@ int main() {
     }
     person * winer = p -> getStart();
     cout << winer -> getNo() << endl;
-    
     delete p;
     return 0;
 }
