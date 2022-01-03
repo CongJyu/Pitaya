@@ -2,7 +2,7 @@
 //  main.cpp
 //  EX10-Q02 约瑟夫问题
 //
-//  Created by Rain Chen on 2021/12/25.
+//  Created by Rain Chen on 2022/1/3.
 //
 
 #include <iostream>
@@ -16,7 +16,7 @@ public:
         no = num;
         next = NULL;
     }
-    void setNext(person * p) {
+    void seNext(person *p) {
         next = p;
     }
     int getNo() {
@@ -37,7 +37,7 @@ public:
         inQueue = num;
         out = whoOut;
         person * prv = NULL, * first = NULL;
-        for (int i = 1; i <= num; i++) {
+        for (int i = 0; i < num; i++) {
             person * p = new person(i);
             if (i == 1) {
                 first = p;
@@ -46,21 +46,37 @@ public:
                 start = p;
             }
             if (i > 1) {
-                prv -> setNext(p);
+                prv -> seNext(p);
             }
             prv = p;
         }
-        prv -> setNext(first);
+        prv -> seNext(first);
     }
+    
     int getInQueue() {
         return inQueue;
     }
+    
     void cnt() {
-        //  write
+        int js = out;
+        person * dummy;
+        js--;
+        if (js == 0) {
+            js = inQueue;
+        }
+        while (js--) {
+            dummy = start;
+            start = start -> getNext();
+        }
+        dummy -> seNext(start -> getNext());
+        start = start -> getNext();
+        inQueue--;
     }
+    
     person * getStart() {
         return start;
     }
+    
     ~cycle() {
         delete start;
     }
@@ -75,6 +91,7 @@ int main() {
     }
     person * winer = p -> getStart();
     cout << winer -> getNo() << endl;
+    
     delete p;
     return 0;
 }
