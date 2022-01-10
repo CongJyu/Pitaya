@@ -9,36 +9,50 @@
 #include <string>
 #include <cstring>
 using namespace std;
+
+void cleanStr(char input[]) {
+    int j_new = 0;
+    int i_old = 0;
+    while (i_old < (int)strlen(input)) {
+        if (input[i_old] >= '0' && input[i_old] <= '9') {
+            i_old++;
+            continue;
+        } else {
+            input[j_new++] = input[i_old++];
+        }
+    }
+    input[j_new] = '\0';
+}
+
+void transfer(char input[], char output[]) {
+    cleanStr(input);
+    int idx_space = 0;
+    while (input[idx_space] != ' ') {
+        idx_space++;
+    }
+    int i_output = 0;
+    for (int i = idx_space + 1; input[i] != '\0'; i++) {
+        if (i == idx_space + 1) {
+            output[i_output++] = input[i] + 'a' - 'A';
+            continue;
+        }
+        output[i_output++] = input[i];
+    }
+    for (int i = 0; i < idx_space; i++) {
+        if (i == 0) {
+            output[i_output++] = input[i] + 'a' - 'A';
+            continue;
+        }
+        output[i_output++] = input[i];
+    }
+    output[i_output] = '\0';
+}
+
 int main() {
-    string first;
-    string family;
-    cin >> first >> family;
-    long long size1 = sizeof(first);
-    long long size2 = sizeof(family);
-    char firstn[size1];
-    char familyn[size2];
-    strcpy(firstn, first.c_str());
-    strcpy(familyn, family.c_str());
-    for (long long i = 0; i < size2 - 1; i++) {
-        if (familyn[i] >= '0' && familyn[i] <= '9') {
-            familyn[i] = '\0';
-        } else if (familyn[i] >= 'A' && familyn[i] <= 'Z') {
-            familyn[i] += 32;
-        }
-    }
-    for (long long i = 0; i < size2 - 2; i++) {
-        cout << familyn[i];
-    }
-    for (long long i = 0; i < size1 - 1; i++) {
-        if (firstn[i] >= '0' && firstn[i] <= '9') {
-            firstn[i] = '\0';
-        } else if (firstn[i] >= 'A' && firstn[i] <= 'Z') {
-            firstn[i] += 32;
-        }
-    }
-    for (long long i = 0; i < size1 - 1; i++) {
-        cout << firstn[i];
-    }
-    cout << endl;
+    char name[100];
+    char newName[100];
+    cin.getline(name, 99);
+    transfer(name, newName);
+    cout << newName << endl;
     return 0;
 }

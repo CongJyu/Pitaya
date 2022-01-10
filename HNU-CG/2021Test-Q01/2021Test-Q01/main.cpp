@@ -5,101 +5,61 @@
 //  Created by Rain Chen on 2022/1/1.
 //
 
-//#include <iostream>
-//#include <algorithm>
-//using namespace std;
-//struct Runner {
-//    long long num;
-//    long long p;
-//    long long v;
-//};
-//bool cmp(const Runner &l, const Runner &r) {
-//    if (l.p == r.p) {
-//        return l.v > r.v;
-//    }
-//    return l.p < r.p;
-//}
-//int main() {
-//    long long n = 0, k = 0;
-//    cin >> n >> k;
-//    Runner * run = new Runner [n];
-//    for (long long i = 0; i < n; i++) {
-//        run[i].num = i + 1;
-//        cin >> run[i].p;
-//    }
-//    for (long long i = 0; i < n; i++) {
-//        cin >> run[i].v;
-//    }
-//    sort(run, run + n, cmp);
-//    long long l_max_v = -1;
-//    long long zero;
-//    for (zero = 0; zero < n; zero++) {
-//        if (run[zero].v > l_max_v) {
-//            l_max_v = run[zero].v;
-//        }
-//        if (run[zero].num == k) {
-//            break;
-//        }
-//    }
-//    long long safe = 0;
-//    long long r_min_v = 1e7;
-//    for (long long i = zero; i < n; i++) {
-//        if (run[i].v >= l_max_v && run[i].p > run[zero].p) {
-//            safe++;
-//        }
-//        if (run[i].v <= r_min_v) {
-//            r_min_v = run[zero].v;
-//        }
-//    }
-//    for (long long i = 0; i < zero; i++) {
-//        if (run[i].v <= r_min_v && run[i].p < run[zero].p) {
-//            safe++;
-//        }
-//    }
-//    delete [] run;
-//    cout << n - safe << endl;
-//    return 0;
-//}
 #include <iostream>
 #include <algorithm>
-#include <cmath>
 using namespace std;
-typedef long long ll;
-
-ll max_v = 0;
-ll min_v = 1e7 + 10;
-
-const ll MAXSIZE = 1e7 + 10;
-
-ll s[MAXSIZE];
-ll v[MAXSIZE];
+struct Person {
+    int no;
+    int pos;
+    int vel;
+    bool operator<(const Person & another) const {
+        if (pos == another.pos) {
+            return vel > another.vel;
+        } else {
+            return pos < another.pos;
+        }
+    }
+};
 
 int main() {
-    ll n, k;
-    cin >> n >> k;
-    for (ll i = 0; i < n; i++) {
-        cin >> s[i];
+    int n, m;
+    cin >> n >> m;
+    Person * runner = new Person [n];
+    for (int i = 1; i <= n; i++) {
+        runner[i - 1].no = i;
+        cin >> runner[i - 1].pos;
     }
-    for (ll i = 0; i < n; i++) {
-        cin >> v[i];
+    for (int i = 1; i <= n; i++) {
+        cin >> runner[i - 1].vel;
     }
-    ll ans = 0;
-    for (ll i = 0; i < n; i++) {
-        if ((s[i] < s[k] && v[i] > v[k]) || (s[i] > s[k] && v[i] < v[k])) {
-            max_v = max(max_v, v[i]);
-            min_v = min(min_v, v[i]);
+    
+    sort(runner, runner + n);
+    
+    int maxV = runner[0].vel, k = 0;
+    while (runner[k].no != m) {
+        if (runner[k].vel > maxV) {
+            maxV = runner[k].vel;
         }
-        if (s[i] == s[k]) {
-            ans++;
-            max_v = max(max_v, v[i]);
-            min_v = min(min_v, v[i]);
+        k++;
+    }
+    if (maxV < runner[k].vel) {
+        maxV = runner[k].vel;
+    }
+    
+    int minV = runner[k].vel, impossible = 0;
+    for (int i = k + 1; i < n; i++) {
+        if (runner[i].vel >= maxV && runner[i].pos > runner[k].pos) {
+            impossible++;
+        }
+        if (runner[i].vel < minV) {
+            minV = runner[i].vel;
         }
     }
-    for (ll i = 0; i < n; i++) {
-        if ((s[i] < s[k] && v[i] > min_v) || (s[i] > s[k] && v[i] < max_v)) {
-            ans++;
+    for (int i = 0; i < k; i++) {
+        if (runner[i].vel <= minV && runner[i].pos < runner[k].pos) {
+            impossible++;
         }
     }
-    cout << ans - 1 << endl;
+    cout << n - impossible << endl;
     return 0;
 }

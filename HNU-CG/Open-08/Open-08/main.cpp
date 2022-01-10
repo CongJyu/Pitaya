@@ -5,50 +5,39 @@
 //  Created by Rain Chen on 2021/11/20.
 //  Something wrong
 
-#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
-#include <string>
-#include <unordered_map>
-#include <vector>
 #include <cstring>
-#include <algorithm>
+#include <string>
+#include <vector>
 using namespace std;
 class Solution {
-private:
-    vector<string> split(string& str) {
-        vector<string> vec;
-        char* cstr = new char[str.length() + 1];
-        strcpy(cstr, str.c_str());
-        char* p = strtok(cstr, " ");
-        while (p != 0) {
-            vec.push_back(p);
-            p = strtok(NULL, " ");
-        }
-        delete[] cstr;
-        return vec;
-    }
 public:
-    string sortSentence(string str) {
-        vector<string> vec = split(str);
-        unordered_map<int, string> mmap;
-        for (auto& it : vec) {
-            string ss = it;
-            int key = atoi(ss.substr(ss.size() - 1).c_str());
-            string value = ss.substr(0, ss.size() - 1);
-            mmap.insert(pair<int, string>(key, value));
+    string sortSentence(string s) {
+        vector<string> words(10);
+        for (int i = 0; i < s.size(); ) {
+            int j = i;
+            while (((j < s.size() && (s[j] < '1')) || s[j] > '9')) {
+                ++j;
+            }
+            int index = s[j] - '0';
+            words[index] = s.substr(i, j - i);
+            i = j + 2;
         }
-        string ans = "";
-        for (size_t i = 0; i < vec.size(); i++) {
-            ans += mmap.at(i + 1) + " ";
+        string res;
+        for (int i = 1; i <= 9; ++i) {
+            res += words[i];
+            if ((i == 9) || (words[i + 1].empty())) {
+                break;
+            }
+            res += ' ';
         }
-        ans = ans.substr(0, ans.size() - 1);
-        return ans;
+        return res;
     }
 };
 int main() {
-    string str;
-    cin >> str;
-    Solution s;
-    cout << s.sortSentence(str) << endl;
+    string sentence;
+    getline(cin, sentence);
+    Solution a;
+    cout << a.sortSentence(sentence) << endl;
     return 0;
 }
