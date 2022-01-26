@@ -6,20 +6,25 @@
 //
 
 #include <iostream>
-#include <vector>
+#include <string>
+#include <algorithm>
 
 using namespace std;
 
 int main() {
     int n = 0;
     cin >> n;
-    int cnt = 0;
-    while (cnt < n) {
-        vector<string> ss;
+    cin.ignore();
+    for (int i = 0; i < n; i++) {
         string s;
-        cin >> s;
-        ss.push_back(s);
-        int i = 0;
-//        while (i > 0)
+        getline(cin, s);
+        string rs = s;
+        reverse(rs.begin(), rs.end());
+        if (s == rs) {
+            cout << "\"" << s << "\" is a palindrome" << endl;
+        } else {
+            cout << "\"" << s << "\" is not a palindrome" << endl;
+        }
     }
+    return 0;
 }
