@@ -15,8 +15,7 @@ const double pi = 3.141592653;
 
 int main() {
     int n = 0, r = 0;
-    while (true) {
-        cin >> n >> r;
+    while (cin >> n >> r) {
         int * angle = new int [n];
         for (int i = 0; i < n - 1; i++) {
             cin >> angle[i];
