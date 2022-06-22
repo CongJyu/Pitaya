@@ -5,26 +5,28 @@
 
 using namespace std;
 
-void alloc_op(int m_size, int *mem) {
-    int x = 0;
-    cin >> x;
-    if (x > m_size) {
-        cout << "NULL" << endl;
-    } else {
-        for (int i = 0; i < x; ++i) {
-            mem[i] = 1;
-        }
-    }
-}
-
 int main() {
     int t = 0, m = 0;
     cin >> t >> m;
-    int *mem = new int[m];
-    string c_operation;
-    cin >> c_operation;
-    if (c_operation == "alloc") {
-        alloc_op(m, mem);
+    int *memory = new int[m];
+    for (int i = 0; i < t; ++i) {
+        string cmd;
+        cin >> cmd;
+        if (cmd == "alloc") {
+            int x = 0;
+            cin >> x;
+            if (x > m) {
+                cout << "NULL" << endl;
+            }
+            for (int j = 0; j < m; ++j) {
+                
+            }
+        } else if (cmd == "erase") {
+            // code
+        } else if (cmd == "defragment") {
+            // code
+        }
     }
+    delete[] memory;
     return 0;
 }
