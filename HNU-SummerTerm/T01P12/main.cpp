@@ -1,102 +1,82 @@
 // t01p12
 
 #include <iostream>
-#include <string>
-#include <algorithm>
-#include <vector>
 
 using namespace std;
 
-struct Memory {
-    int mark;
-    int length;
-    bool usable;
-
-    Memory(int mark_t, int len, bool use_a) {
-        this->mark = mark_t;
-        this->length = len;
-        this->usable = use_a;
-    }
-};
-
-bool cmp(const Memory &a, const Memory &b) {
-    if (a.usable != b.usable) {
-        return a.mark < b.mark;
-    }
-    return a.usable <b.usable;
-}
-
 int main() {
-    vector<Memory> mms;
-    vector<Memory>::iterator it;
-    string opt;
-    int t, m, size_available;
-    int number;
-    int mark = 0;
+    int t, m;
     cin >> t >> m;
-    size_available = m;
-    for (int i = 0; i < t; ++i) {
-        cin >> opt;
-        if (opt != "defragment") {
-            cin >> number;
-            if (opt == "alloc") {
-                if (number <= size_available) {
-                    bool success_opt = false;
-                    for (it = mms.begin(); it != mms.end(); it++) {
-                        if (it->usable && it->length > number) {
-                            cout << mark << endl;
-                            int tmp = it->length;
-                            it->mark = mark;
-                            it->usable = false;
-                            it->length = number;
-                            mms.insert(it + 1, Memory(-1, tmp - it->length, true));
-                            size_available -= number;
-                            mark += 1;
-                            success_opt = true;
+    int *a = new int[m];
+    for (int i = 0; i < m; ++i) {
+        a[i] = 0;
+    }
+    int x = 1;
+    while (t--) {
+        string str;
+        int n;
+        cin >> str;
+        if (str != "defragment") {
+            cin >> n;
+        }
+        int flag = 0;
+        if (str == "alloc") {
+            int left;
+            int right;
+            for (int j = 0; j < m; ++j) {
+                if (a[j] == 0) {
+                    left = j;
+                    while (a[j] == 0) {
+                        j++;
+                        if (j == m) {
                             break;
                         }
                     }
-                    if (!success_opt) {
-                        int sum = 0;
-                        for (it = mms.begin(); it != mms.end(); it++) {
-                            sum += it->length;
+                    right = j;
+                    int len = right - left;
+                    if (len >= n) {
+                        flag = 1;
+                        for (int i1 = left; i1 < left + n; i1++) {
+                            a[i1] = x;
                         }
-                        if ((m - sum) >= number) {
-                            cout << mark << endl;
-                            mms.emplace_back(mark, number, false);
-                            size_available -= number;
-                            mark++;
-                        } else {
-                            cout << "NULL" << endl;
-                        }
-                    }
-                } else {
-                    cout << "NULL" << endl;
-                }
-            } else {
-                bool effective = false;
-                for (it = mms.begin(); it != mms.end(); it++) {
-                    if (it->mark == number) {
-                        size_available += it->length;
-                        it->usable = true;
-                        it->mark = -1;
-                        effective = true;
                         break;
                     }
                 }
-                if (!effective) {
-                    cout << "ILLEGAL_ERASE_ARGUMENT" << endl;
+            }
+            if (flag == 1) {
+                cout << x << endl;
+                x++;
+            } else {
+                cout << "NULL" << endl;
+            }
+        } else if (str == "erase") {
+            int key = n;
+            for (int i = 0; i < m; ++i) {
+                if (a[i] == key) {
+                    flag = 1;
+                    a[i] = 0;
                 }
             }
-        } else {
-            sort(mms.begin(), mms.end(), cmp);
-            for (int j = 0; j < (int)mms.size(); ++j) {
-                if (mms[j].usable) {
-                    it = mms.begin() + j;
-                    mms.erase(it);
+            if (flag == 0) {
+                cout << "ILLEGAL_ERASE_ARGUMENT" << endl;
+            }
+        } else if (str == "defragment") {
+            int *temp = new int[m];
+            for (int i1 = 0; i1 < m; ++i1) {
+                temp[i1] = 0;
+            }
+            int k = 0;
+            for (int i = 0; i < m; ++i) {
+                if (a[i] != 0) {
+                    temp[k] = a[i];
+                    k++;
                 }
+            }
+            for (int i2 = 0; i2 < m; ++i2) {
+                a[i2] = temp[i2];
             }
         }
     }
+    delete[] a;
     return 0;
 }
