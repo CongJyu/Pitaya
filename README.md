@@ -14,6 +14,7 @@ The answers to the homework are stored in the following dirs:
 
 ```shell
 /HNU-CG
+/HNU-PythonCourse
 /HNU-SummerTerm
 /SCUT-Code
 /SYSU-HW
@@ -22,6 +23,7 @@ The answers to the homework are stored in the following dirs:
 ## Details 详细
 
 - `HNU-CG` 目录存放了湖南大学「程序设计2021」课程的练习答案。
+- `HNU-PythonCourse` 目录存放了湖南大学「Python 基础」课程的大作业练习代码。
 - `HNU-SummerTerm` 目录存放了湖南大学夏季学期「程序设计训练2022」课程的答案。
 - `SCUT-Code` 目录存放了华南理工大学 OJ 上的 2021 年部分题目的答案。
 - `SYSU-HW` 目录存放了中山大学「C 语言程序设计」课程的小部分作业。
