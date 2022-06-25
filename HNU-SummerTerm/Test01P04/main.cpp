@@ -1,87 +1,51 @@
 // 测试 1 问题 4
 
-#include <algorithm>
-#include <cstdio>
 #include <iostream>
+#include <algorithm>
+#include <string>
 
 using namespace std;
+
 struct People {
-    char id[19];
-    int social;
-    int area;
-    char date[11];
+    char id[19]{};
+    int social{};
+    int area{};
+    char date[11]{};
 };
 
-bool compPrior(const pair<long long int, People> a, const pair<long long int, People> b);
+struct Human {
+    string name;
+    int months{};
+    int s{};
+    int time{};
+    int rank{};
+    int has_house{};
+    int remain{};
 
-People *getMess(int &n);
-
-long long int getPriority(People &a);
-
-int getDay(char date[]);
-
-pair<long long int, People> p[100000];
-int firstForSamePriority[100000], lastForSamePriority[100000];
-
-int main() {
-    People *person;
-    int n;
-    person = getMess(n);
-    for (int i = 0; i < n; i++) {
-        p[i].second = person[i];
-        p[i].first = getPriority(person[i]);
+    Human() {
+        has_house = 1;
     }
-    delete[] person;
-    stable_sort(p, p + n, compPrior);
-    firstForSamePriority[0] = 0;
-    for (int i = 1; i < n; i++) {
-        if (p[i].first == p[i - 1].first) {
-            firstForSamePriority[i] = firstForSamePriority[i - 1];
+};
+
+bool cmp(const Human &a, const Human &b) {
+    if (a.has_house != b.has_house) {
+        return a.has_house > b.has_house;
+    }
+    if (a.s == 0 && b.s == 0) {
+        if (a.months > b.months) {
+            return a.months > b.months;
         } else {
-            firstForSamePriority[i] = i;
+            return a.time < b.time;
         }
     }
-    lastForSamePriority[n - 1] = n - 1;
-    for (int i = n - 2; i >= 0; i--) {
-        if (p[i].first == p[i + 1].first) {
-            lastForSamePriority[i] = lastForSamePriority[i + 1];
-        } else {
-            lastForSamePriority[i] = i;
-        }
+    if (a.s != b.s) {
+        return a.s < b.s;
+    } else {
+        return a.time < b.time;
     }
-    int m, t, j;
-    char id[19];
-    cin >> m >> t;
-    getchar();
-    for (int i = 0; i < t; i++) {
-        gets(id);
-        for (j = 0; j < n; j++) {
-            if (equal(p[j].second.id, p[j].second.id + 18, id)) {
-                break;
-            }
-        }
-        if (p[j].first == -1000000000000) {
-            printf("Sorry\n");
-            continue;
-        }
-        if (firstForSamePriority[j] >= m) {
-            printf("Sorry");
-            continue;
-        }
-        if (lastForSamePriority[j] < m) {
-            if (firstForSamePriority[j] == lastForSamePriority[j]) {
-                printf("%d\n", j + 1);
-            } else {
-                printf("%d %d\n", firstForSamePriority[j] + 1, lastForSamePriority[j] + 1);
-            }
-            continue;
-        }
-        printf("%d/%d\n", m - firstForSamePriority[j], lastForSamePriority[j] - firstForSamePriority[j] + 1);
-    }
-    return 0;
 }
 
-People *getMess(int &n) {
+People *get_mess(int &n) {
     FILE *fp;
     fp = fopen("house.bin", "rb");
     fseek(fp, -1 * (long) sizeof(int), 2);
@@ -93,27 +57,98 @@ People *getMess(int &n) {
     return tmp;
 }
 
-long long int getPriority(People &a) {
-    int time = getDay(a.date);
-    if (a.area == 0 && a.social > 24) {
-        return a.social * 10000000000 - time;
-    } else if (a.area > 0) {
-        return -100000000 * a.area - time;
-    } else {
-        return -1000000000000;
+int main() {
+    People *person;
+    int n = 0;
+    person = get_mess(n);
+    int no_house = 0;
+    auto *h = new Human[n];
+    for (int i = 0; i < n; ++i) {
+        h[i].name = person[i].id;
+        h[i].months = person[i].social;
+        h[i].s = person[i].area;
+        if (h[i].s == 0 && h[i].months <= 24) {
+            h[i].has_house = 0;
+            no_house++;
+        }
+        string tmp = person[i].date;
+        h[i].time = (tmp[0] - '0') * 10 * 30
+                    + (tmp[1] - '0') * 30
+                    + (tmp[3] - '0') * 10
+                    + (tmp[4] - '0')
+                    + (tmp[6] - '0') * 1000 * 365
+                    + (tmp[7] - '0') * 100 * 365
+                    + (tmp[8] - '0') * 10 * 365
+                    + (tmp[9] - '0') * 1 * 365;
     }
-}
-
-int getDay(char date[]) {
-    for (int i = 0; i < 10; i++) {
-        date[i] -= '0';
+    sort(&h[0], &h[n], cmp);
+    // input
+    int m = 0, t = 0;
+    cin >> m >> t;
+    int num = n - no_house;
+    for (int i = 0; i < num; ++i) {
+        h[i].rank = i + 1;
+        if (i > 0) {
+            if (h[i].s == 0 && h[i - 1].s == 0) {
+                if (h[i].months == h[i - 1].months && h[i].time == h[i - 1].time) {
+                    h[i].rank = h[i - 1].rank;
+                }
+            } else if (h[i].s == h[i - 1].s && h[i].s != 0 && h[i - 1].s != 0) {
+                if (h[i].time == h[i - 1].time) {
+                    h[i].rank = h[i - 1].rank;
+                }
+            }
+        }
     }
-    int year = date[6] * 1000 + date[7] * 100 + date[8] * 10 + date[9];
-    int mon = date[3] * 10 + date[4];
-    int day = date[0] * 100 + date[1] * 10 + date[2];
-    return year * 365 + mon * 30 + day;
-}
-
-bool compPrior(const pair<long long int, People> a, const pair<long long int, People> b) {
-    return a.first > b.first;
+    for (int i = 0; i < num; ++i) {
+        h[i].remain = n - 1;
+    }
+    while (t--) {
+        string a_name;
+        cin >> a_name;
+        int pos = 0;
+        for (int i = 0; i < n; ++i) {
+            if (h[i].name == a_name) {
+                pos = i;
+                break;
+            }
+        }
+        if (h[pos].has_house == 0) {
+            cout << "Sorry" << endl;
+        } else {
+            int num_house = 0;
+            int num_same_rank = -1;
+            for (int i = pos; i < num; ++i) {
+                if (h[i].rank == h[pos].rank) {
+                    break;
+                } else {
+                    num_same_rank++;
+                }
+            }
+            for (int i = pos; i >= 0; i--) {
+                if (h[i].rank == h[pos].rank) {
+                    num_house = h[i].remain;
+                    num_same_rank++;
+                } else {
+                    break;
+                }
+            }
+            if (num_same_rank == 1) {
+                if (num_house <= 0) {
+                    cout << "Sorry" << endl;
+                } else {
+                    cout << h[pos].rank << endl;
+                }
+            } else {
+                if (num_house <= 0) {
+                    cout << "Sorry" << endl;
+                } else if (num_house >= num_same_rank) {
+                    cout << h[pos].rank << " " << h[pos].rank + num_same_rank << endl;
+                } else {
+                    cout << num_house << "/" << num_same_rank << endl;
+                }
+            }
+        }
+    }
+    return 0;
 }
