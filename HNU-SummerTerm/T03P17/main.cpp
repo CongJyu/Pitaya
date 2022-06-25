@@ -9,7 +9,7 @@ int main() {
     string input, compare;
     while (cin >> input >> compare) {
         // code
-        
+
     }
     return 0;
 }
