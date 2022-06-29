@@ -15,50 +15,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d7bb74d-18c4-4faa-adfa-aa9441293f58" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../T02P02/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02P02/.idea/T02P02.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02P02/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02P02/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02P02/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02P03/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02P03/.idea/T02P03.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02P03/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02P03/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02P03/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02P04/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02P04/.idea/T02P04.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02P04/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02P04/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02P04/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02P05/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02P05/.idea/T02P05.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02P05/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02P05/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02P05/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02P06/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02P06/.idea/T02P06.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02P06/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02P06/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02P06/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/T02P10.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02P11/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02P11/.idea/T02P11.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02P11/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02P11/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../T02P11/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T01P01/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../T01P01/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T01P02/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../T01P02/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T01P03/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../T01P03/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../T01P04/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../T01P04/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../T01P04/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../T01P04/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../T01P12/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../T01P12/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../T01P12/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../T01P12/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../T01P12/cmake-build-debug/CMakeFiles/T01P12.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../T01P12/cmake-build-debug/CMakeFiles/T01P12.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../T01P12/cmake-build-debug/T01P12" beforeDir="false" afterPath="$PROJECT_DIR$/../T01P12/cmake-build-debug/T01P12" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T01P05/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../T01P05/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T01P06/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../T01P06/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T01P07/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../T01P07/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T01P07/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../T01P07/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T01P08/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../T01P08/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T01P09/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../T01P09/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T01P10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../T01P10/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T01P10/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../T01P10/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T01P11/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../T01P11/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../T01P12/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../T01P12/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../T01P12/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../T01P12/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../T02P01/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../T02P01/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../T02P01/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../T02P01/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T02P02/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../T02P02/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T02P03/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../T02P03/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T02P04/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../T02P04/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T02P05/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../T02P05/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T02P06/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../T02P06/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T02P07/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../T02P07/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T02P08/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../T02P08/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T02P09/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../T02P09/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../T02P09/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../T02P09/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,15 +78,11 @@
     "WebServerToolWindowFactoryState": "false",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
+    "last_opened_file_path": "/Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/T02P10",
     "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="T02P10" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="T02P10" TARGET_NAME="T02P10" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="T02P10" RUN_TARGET_NAME="T02P10">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -120,6 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1655887238011</updated>
       <workItem from="1655887239292" duration="927000" />
+      <workItem from="1656521184790" duration="17000" />
     </task>
     <servers />
   </component>
