@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/T02P21/build",
+  "command": "/usr/bin/clang++   -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17 -o CMakeFiles/T02P21.dir/main.cpp.o -c /Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/T02P21/main.cpp",
+  "file": "/Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/T02P21/main.cpp"
+}
+]

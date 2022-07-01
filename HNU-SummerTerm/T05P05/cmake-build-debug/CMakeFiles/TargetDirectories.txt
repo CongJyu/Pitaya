@@ -1,0 +1,3 @@
+/Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/T05P05/cmake-build-debug/CMakeFiles/T05P05.dir
+/Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/T05P05/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/T05P05/cmake-build-debug/CMakeFiles/rebuild_cache.dir
