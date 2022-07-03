@@ -13,6 +13,7 @@ The answers to the homework are stored in the following dirs:
 答案代码存储在下面几个目录中：
 
 ```shell
+/HNU-Basic
 /HNU-CG
 /HNU-PythonCourse
 /HNU-SummerTerm
@@ -22,6 +23,7 @@ The answers to the homework are stored in the following dirs:
 
 ## Details 详细
 
+- `HNU-Basic` 目录存放了湖南大学给转专业同学提供的基础训练作业的答案。
 - `HNU-CG` 目录存放了湖南大学「程序设计2021」课程的练习答案。
 - `HNU-PythonCourse` 目录存放了湖南大学「Python 基础」课程的大作业练习代码。
 - `HNU-SummerTerm` 目录存放了湖南大学夏季学期「程序设计训练2022」课程的答案。
