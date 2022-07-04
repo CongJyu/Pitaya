@@ -1,0 +1,283 @@
+The system is: Darwin - 21.5.0 - arm64
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" succeeded.
+Compiler: /opt/homebrew/bin/gfortran 
+Build flags: 
+Id flags: -v 
+
+The output was:
+0
+Driving: /opt/homebrew/bin/gfortran -v CMakeFortranCompilerId.F -mmacosx-version-min=12.0.0 -asm_macosx_version_min=12.0 -nodefaultexport -l gfortran
+Using built-in specs.
+COLLECT_GCC=/opt/homebrew/bin/gfortran
+COLLECT_LTO_WRAPPER=/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../libexec/gcc/aarch64-apple-darwin21/11/lto-wrapper
+Target: aarch64-apple-darwin21
+Configured with: ../configure --prefix=/opt/homebrew/opt/gcc --libdir=/opt/homebrew/opt/gcc/lib/gcc/11 --disable-nls --enable-checking=release --with-gcc-major-version-only --enable-languages=c,c++,objc,obj-c++,fortran --program-suffix=-11 --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-zstd=/opt/homebrew/opt/zstd --with-pkgversion='Homebrew GCC 11.3.0_2' --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --build=aarch64-apple-darwin21 --with-system-zlib --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.3.0 (Homebrew GCC 11.3.0_2) 
+COLLECT_GCC_OPTIONS='-v' '-mmacosx-version-min=12.0.0' '-asm_macosx_version_min=12.0' '-nodefaultexport' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'a-'
+ /opt/homebrew/Cellar/gcc/11.3.0_2/bin/../libexec/gcc/aarch64-apple-darwin21/11/f951 CMakeFortranCompilerId.F -ffixed-form -cpp=/var/folders/jt/_5j2fynd1x57hvkpg988z99h0000gn/T//ccjYh5CS.f90 -quiet -v -iprefix /opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/ -D__DYNAMIC__ CMakeFortranCompilerId.F -fPIC -quiet -dumpdir a- -dumpbase CMakeFortranCompilerId.F -dumpbase-ext .F -mmacosx-version-min=12.0.0 -mlittle-endian -mabi=lp64 -version -fintrinsic-modules-path /opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/finclude -o /var/folders/jt/_5j2fynd1x57hvkpg988z99h0000gn/T//cc6JDBRl.s
+GNU Fortran (Homebrew GCC 11.3.0_2) version 11.3.0 (aarch64-apple-darwin21)
+	compiled by GNU C version 11.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/../../../../../../aarch64-apple-darwin21/include"
+ignoring duplicate directory "/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/../../../../lib/gcc/11/gcc/aarch64-apple-darwin21/11/include"
+ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/local/include"
+ignoring duplicate directory "/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/../../../../lib/gcc/11/gcc/aarch64-apple-darwin21/11/include-fixed"
+ignoring nonexistent directory "/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/../../../../lib/gcc/11/gcc/aarch64-apple-darwin21/11/../../../../../../aarch64-apple-darwin21/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/finclude
+ /opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/include
+ /opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/include-fixed
+ /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include
+End of search list.
+GNU Fortran2008 (Homebrew GCC 11.3.0_2) version 11.3.0 (aarch64-apple-darwin21)
+	compiled by GNU C version 11.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-v' '-mmacosx-version-min=12.0.0'  '-nodefaultexport' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'a-'
+ as -arch arm64 -v -mmacosx-version-min=12.0 -o /var/folders/jt/_5j2fynd1x57hvkpg988z99h0000gn/T//cc4eKqIo.o /var/folders/jt/_5j2fynd1x57hvkpg988z99h0000gn/T//cc6JDBRl.s
+Apple clang version 13.1.6 (clang-1316.0.21.2.5)
+Target: arm64-apple-darwin21.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1as -triple arm64-apple-macosx12.0.0 -filetype obj -main-file-name cc6JDBRl.s -target-cpu apple-m1 -target-feature +v8.5a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp16fml -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -fdebug-compilation-dir=/Users/rainchen/CodingArea/Fortran-Example/example2-1/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdFortran -dwarf-debug-producer "Apple clang version 13.1.6 (clang-1316.0.21.2.5)" -dwarf-version=4 -mrelocation-model pic --mrelax-relocations -mllvm -disable-aligned-alloc-awareness=1 -o /var/folders/jt/_5j2fynd1x57hvkpg988z99h0000gn/T//cc4eKqIo.o /var/folders/jt/_5j2fynd1x57hvkpg988z99h0000gn/T//cc6JDBRl.s
+Reading specs from /opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/../../../libgfortran.spec
+rename spec lib to liborig
+COLLECT_GCC_OPTIONS='-v' '-mmacosx-version-min=12.0.0'  '-nodefaultexport' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'a-'
+COMPILER_PATH=/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../libexec/gcc/aarch64-apple-darwin21/11/:/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../libexec/gcc/
+LIBRARY_PATH=/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/:/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/:/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/../../../
+COLLECT_GCC_OPTIONS='-v' '-mmacosx-version-min=12.0.0'  '-nodefaultexport' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'a.'
+ /opt/homebrew/Cellar/gcc/11.3.0_2/bin/../libexec/gcc/aarch64-apple-darwin21/11/collect2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/ -dynamic -arch arm64 -macosx_version_min 12.0.0 -o a.out -L/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11 -L/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc -L/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/../../.. /var/folders/jt/_5j2fynd1x57hvkpg988z99h0000gn/T//cc4eKqIo.o -lgfortran -lemutls_w -lgcc -lquadmath -lemutls_w -lgcc -lSystem -lgcc -no_compact_unwind -rpath @loader_path -rpath /opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11/gcc/aarch64-apple-darwin21/11 -rpath /opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11/gcc -rpath /opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11
+
+
+Compilation of the Fortran compiler identification source "CMakeFortranCompilerId.F" produced "a.out"
+
+The Fortran compiler identification is GNU, found in "/Users/rainchen/CodingArea/Fortran-Example/example2-1/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdFortran/a.out"
+
+Detecting Fortran compiler ABI info compiled with the following output:
+Change Dir: /Users/rainchen/CodingArea/Fortran-Example/example2-1/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_f4f26 && [1/4] Building Fortran preprocessed CMakeFiles/cmTC_f4f26.dir/CMakeFortranCompilerABI.F90-pp.f90
+Using built-in specs.
+COLLECT_GCC=/opt/homebrew/bin/gfortran
+Target: aarch64-apple-darwin21
+Configured with: ../configure --prefix=/opt/homebrew/opt/gcc --libdir=/opt/homebrew/opt/gcc/lib/gcc/11 --disable-nls --enable-checking=release --with-gcc-major-version-only --enable-languages=c,c++,objc,obj-c++,fortran --program-suffix=-11 --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-zstd=/opt/homebrew/opt/zstd --with-pkgversion='Homebrew GCC 11.3.0_2' --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --build=aarch64-apple-darwin21 --with-system-zlib --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.3.0 (Homebrew GCC 11.3.0_2) 
+COLLECT_GCC_OPTIONS='-cpp' '-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk' '-v' '-E' '-o' 'CMakeFiles/cmTC_f4f26.dir/CMakeFortranCompilerABI.F90-pp.f90' '-mmacosx-version-min=12.0.0' '-asm_macosx_version_min=12.0' '-nodefaultexport' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_f4f26.dir/'
+ /opt/homebrew/Cellar/gcc/11.3.0_2/bin/../libexec/gcc/aarch64-apple-darwin21/11/f951 /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeFortranCompilerABI.F90 -cpp=/var/folders/jt/_5j2fynd1x57hvkpg988z99h0000gn/T//ccaQJF12.f90 -E -quiet -v -iprefix /opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/ -D__DYNAMIC__ -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeFortranCompilerABI.F90 -o CMakeFiles/cmTC_f4f26.dir/CMakeFortranCompilerABI.F90-pp.f90 -dumpdir CMakeFiles/cmTC_f4f26.dir/ -dumpbase CMakeFortranCompilerABI.F90-pp.F90 -dumpbase-ext .F90 -fPIC -mmacosx-version-min=12.0.0 -mlittle-endian -mabi=lp64 -fsyntax-only
+ignoring nonexistent directory "/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/../../../../../../aarch64-apple-darwin21/include"
+ignoring duplicate directory "/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/../../../../lib/gcc/11/gcc/aarch64-apple-darwin21/11/include"
+ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/local/include"
+ignoring duplicate directory "/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/../../../../lib/gcc/11/gcc/aarch64-apple-darwin21/11/include-fixed"
+ignoring nonexistent directory "/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/../../../../lib/gcc/11/gcc/aarch64-apple-darwin21/11/../../../../../../aarch64-apple-darwin21/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/include
+ /opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/include-fixed
+ /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include
+End of search list.
+COMPILER_PATH=/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../libexec/gcc/aarch64-apple-darwin21/11/:/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../libexec/gcc/
+LIBRARY_PATH=/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/:/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/:/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/../../../
+COLLECT_GCC_OPTIONS='-cpp' '-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk' '-v' '-E' '-o' 'CMakeFiles/cmTC_f4f26.dir/CMakeFortranCompilerABI.F90-pp.f90' '-mmacosx-version-min=12.0.0' '-asm_macosx_version_min=12.0' '-nodefaultexport' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_f4f26.dir/CMakeFortranCompilerABI.F90-pp.'
+[2/4] Generating Fortran dyndep file CMakeFiles/cmTC_f4f26.dir/Fortran.dd
+[3/4] Building Fortran object CMakeFiles/cmTC_f4f26.dir/CMakeFortranCompilerABI.F90.o
+Using built-in specs.
+COLLECT_GCC=/opt/homebrew/bin/gfortran
+Target: aarch64-apple-darwin21
+Configured with: ../configure --prefix=/opt/homebrew/opt/gcc --libdir=/opt/homebrew/opt/gcc/lib/gcc/11 --disable-nls --enable-checking=release --with-gcc-major-version-only --enable-languages=c,c++,objc,obj-c++,fortran --program-suffix=-11 --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-zstd=/opt/homebrew/opt/zstd --with-pkgversion='Homebrew GCC 11.3.0_2' --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --build=aarch64-apple-darwin21 --with-system-zlib --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.3.0 (Homebrew GCC 11.3.0_2) 
+COLLECT_GCC_OPTIONS='-I' '/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules' '-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk' '-v' '-fpreprocessed' '-c' '-o' 'CMakeFiles/cmTC_f4f26.dir/CMakeFortranCompilerABI.F90.o' '-mmacosx-version-min=12.0.0' '-asm_macosx_version_min=12.0' '-nodefaultexport' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_f4f26.dir/'
+ /opt/homebrew/Cellar/gcc/11.3.0_2/bin/../libexec/gcc/aarch64-apple-darwin21/11/f951 CMakeFiles/cmTC_f4f26.dir/CMakeFortranCompilerABI.F90-pp.f90 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -I /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules -fPIC -quiet -dumpdir CMakeFiles/cmTC_f4f26.dir/ -dumpbase CMakeFortranCompilerABI.F90.f90 -dumpbase-ext .f90 -mmacosx-version-min=12.0.0 -mlittle-endian -mabi=lp64 -version -fpreprocessed -fintrinsic-modules-path /opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/finclude -o /var/folders/jt/_5j2fynd1x57hvkpg988z99h0000gn/T//ccrBWnj8.s
+GNU Fortran (Homebrew GCC 11.3.0_2) version 11.3.0 (aarch64-apple-darwin21)
+	compiled by GNU C version 11.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+GNU Fortran2008 (Homebrew GCC 11.3.0_2) version 11.3.0 (aarch64-apple-darwin21)
+	compiled by GNU C version 11.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-I' '/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules' '-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk' '-v' '-fpreprocessed' '-c' '-o' 'CMakeFiles/cmTC_f4f26.dir/CMakeFortranCompilerABI.F90.o' '-mmacosx-version-min=12.0.0'  '-nodefaultexport' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_f4f26.dir/'
+ as -arch arm64 -v -I /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules -mmacosx-version-min=12.0 -o CMakeFiles/cmTC_f4f26.dir/CMakeFortranCompilerABI.F90.o /var/folders/jt/_5j2fynd1x57hvkpg988z99h0000gn/T//ccrBWnj8.s
+Apple clang version 13.1.6 (clang-1316.0.21.2.5)
+Target: arm64-apple-darwin21.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1as -triple arm64-apple-macosx12.0.0 -filetype obj -main-file-name ccrBWnj8.s -target-cpu apple-m1 -target-feature +v8.5a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp16fml -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -I /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules -fdebug-compilation-dir=/Users/rainchen/CodingArea/Fortran-Example/example2-1/cmake-build-debug/CMakeFiles/CMakeTmp -dwarf-debug-producer "Apple clang version 13.1.6 (clang-1316.0.21.2.5)" -I /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules -dwarf-version=4 -mrelocation-model pic --mrelax-relocations -mllvm -disable-aligned-alloc-awareness=1 -o CMakeFiles/cmTC_f4f26.dir/CMakeFortranCompilerABI.F90.o /var/folders/jt/_5j2fynd1x57hvkpg988z99h0000gn/T//ccrBWnj8.s
+COMPILER_PATH=/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../libexec/gcc/aarch64-apple-darwin21/11/:/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../libexec/gcc/
+LIBRARY_PATH=/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/:/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/:/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/../../../
+COLLECT_GCC_OPTIONS='-I' '/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules' '-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk' '-v' '-fpreprocessed' '-c' '-o' 'CMakeFiles/cmTC_f4f26.dir/CMakeFortranCompilerABI.F90.o' '-mmacosx-version-min=12.0.0'  '-nodefaultexport' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_f4f26.dir/CMakeFortranCompilerABI.F90.'
+[4/4] Linking Fortran executable cmTC_f4f26
+Driving: /opt/homebrew/bin/gfortran -v -Wl,-v -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk CMakeFiles/cmTC_f4f26.dir/CMakeFortranCompilerABI.F90.o -o cmTC_f4f26 -mmacosx-version-min=12.0.0 -asm_macosx_version_min=12.0 -nodefaultexport -l gfortran
+Using built-in specs.
+COLLECT_GCC=/opt/homebrew/bin/gfortran
+COLLECT_LTO_WRAPPER=/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../libexec/gcc/aarch64-apple-darwin21/11/lto-wrapper
+Target: aarch64-apple-darwin21
+Configured with: ../configure --prefix=/opt/homebrew/opt/gcc --libdir=/opt/homebrew/opt/gcc/lib/gcc/11 --disable-nls --enable-checking=release --with-gcc-major-version-only --enable-languages=c,c++,objc,obj-c++,fortran --program-suffix=-11 --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-zstd=/opt/homebrew/opt/zstd --with-pkgversion='Homebrew GCC 11.3.0_2' --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --build=aarch64-apple-darwin21 --with-system-zlib --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.3.0 (Homebrew GCC 11.3.0_2) 
+Reading specs from /opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/../../../libgfortran.spec
+rename spec lib to liborig
+COLLECT_GCC_OPTIONS='-v' '-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk' '-o' 'cmTC_f4f26' '-mmacosx-version-min=12.0.0' '-asm_macosx_version_min=12.0' '-nodefaultexport' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_f4f26-'
+COMPILER_PATH=/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../libexec/gcc/aarch64-apple-darwin21/11/:/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../libexec/gcc/
+LIBRARY_PATH=/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/:/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/:/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/../../../
+COLLECT_GCC_OPTIONS='-v' '-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk' '-o' 'cmTC_f4f26' '-mmacosx-version-min=12.0.0' '-asm_macosx_version_min=12.0' '-nodefaultexport' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_f4f26.'
+ /opt/homebrew/Cellar/gcc/11.3.0_2/bin/../libexec/gcc/aarch64-apple-darwin21/11/collect2 -dynamic -arch arm64 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -macosx_version_min 12.0.0 -o cmTC_f4f26 -L/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11 -L/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc -L/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/../../.. -v CMakeFiles/cmTC_f4f26.dir/CMakeFortranCompilerABI.F90.o -lgfortran -lemutls_w -lgcc -lquadmath -lemutls_w -lgcc -lSystem -lgcc -no_compact_unwind -rpath @loader_path -rpath /opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11/gcc/aarch64-apple-darwin21/11 -rpath /opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11/gcc -rpath /opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11
+collect2 version 11.3.0
+/usr/bin/ld -dynamic -arch arm64 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -macosx_version_min 12.0.0 -o cmTC_f4f26 -L/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11 -L/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc -L/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/../../.. -v CMakeFiles/cmTC_f4f26.dir/CMakeFortranCompilerABI.F90.o -lgfortran -lemutls_w -lgcc -lquadmath -lemutls_w -lgcc -lSystem -lgcc -no_compact_unwind -rpath @loader_path -rpath /opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11/gcc/aarch64-apple-darwin21/11 -rpath /opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11/gcc -rpath /opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11
+@(#)PROGRAM:ld  PROJECT:ld64-764
+BUILD 11:22:55 Apr 28 2022
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11/gcc/aarch64-apple-darwin21/11
+	/opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11/gcc
+	/opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11
+	/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib
+Framework search paths:
+	/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/
+
+
+
+Parsed Fortran implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/include]
+    add: [/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/include-fixed]
+    add: [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include]
+  end of search list found
+  collapse include dir [/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/include] ==> [/opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11/gcc/aarch64-apple-darwin21/11/include]
+  collapse include dir [/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/include-fixed] ==> [/opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11/gcc/aarch64-apple-darwin21/11/include-fixed]
+  collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include]
+  implicit include dirs: [/opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11/gcc/aarch64-apple-darwin21/11/include;/opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11/gcc/aarch64-apple-darwin21/11/include-fixed;/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include]
+
+
+Parsed Fortran implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/rainchen/CodingArea/Fortran-Example/example2-1/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_f4f26 && [1/4] Building Fortran preprocessed CMakeFiles/cmTC_f4f26.dir/CMakeFortranCompilerABI.F90-pp.f90]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/homebrew/bin/gfortran]
+  ignore line: [Target: aarch64-apple-darwin21]
+  ignore line: [Configured with: ../configure --prefix=/opt/homebrew/opt/gcc --libdir=/opt/homebrew/opt/gcc/lib/gcc/11 --disable-nls --enable-checking=release --with-gcc-major-version-only --enable-languages=c c++ objc obj-c++ fortran --program-suffix=-11 --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-zstd=/opt/homebrew/opt/zstd --with-pkgversion='Homebrew GCC 11.3.0_2' --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --build=aarch64-apple-darwin21 --with-system-zlib --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.3.0 (Homebrew GCC 11.3.0_2) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-cpp' '-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk' '-v' '-E' '-o' 'CMakeFiles/cmTC_f4f26.dir/CMakeFortranCompilerABI.F90-pp.f90' '-mmacosx-version-min=12.0.0' '-asm_macosx_version_min=12.0' '-nodefaultexport' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_f4f26.dir/']
+  ignore line: [ /opt/homebrew/Cellar/gcc/11.3.0_2/bin/../libexec/gcc/aarch64-apple-darwin21/11/f951 /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeFortranCompilerABI.F90 -cpp=/var/folders/jt/_5j2fynd1x57hvkpg988z99h0000gn/T//ccaQJF12.f90 -E -quiet -v -iprefix /opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/ -D__DYNAMIC__ -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeFortranCompilerABI.F90 -o CMakeFiles/cmTC_f4f26.dir/CMakeFortranCompilerABI.F90-pp.f90 -dumpdir CMakeFiles/cmTC_f4f26.dir/ -dumpbase CMakeFortranCompilerABI.F90-pp.F90 -dumpbase-ext .F90 -fPIC -mmacosx-version-min=12.0.0 -mlittle-endian -mabi=lp64 -fsyntax-only]
+  ignore line: [ignoring nonexistent directory "/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/../../../../../../aarch64-apple-darwin21/include"]
+  ignore line: [ignoring duplicate directory "/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/../../../../lib/gcc/11/gcc/aarch64-apple-darwin21/11/include"]
+  ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/local/include"]
+  ignore line: [ignoring duplicate directory "/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/../../../../lib/gcc/11/gcc/aarch64-apple-darwin21/11/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/../../../../lib/gcc/11/gcc/aarch64-apple-darwin21/11/../../../../../../aarch64-apple-darwin21/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/include]
+  ignore line: [ /opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/include-fixed]
+  ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include]
+  ignore line: [End of search list.]
+  ignore line: [COMPILER_PATH=/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../libexec/gcc/aarch64-apple-darwin21/11/:/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../libexec/gcc/]
+  ignore line: [LIBRARY_PATH=/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/:/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/:/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-cpp' '-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk' '-v' '-E' '-o' 'CMakeFiles/cmTC_f4f26.dir/CMakeFortranCompilerABI.F90-pp.f90' '-mmacosx-version-min=12.0.0' '-asm_macosx_version_min=12.0' '-nodefaultexport' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_f4f26.dir/CMakeFortranCompilerABI.F90-pp.']
+  ignore line: [[2/4] Generating Fortran dyndep file CMakeFiles/cmTC_f4f26.dir/Fortran.dd]
+  ignore line: [[3/4] Building Fortran object CMakeFiles/cmTC_f4f26.dir/CMakeFortranCompilerABI.F90.o]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/homebrew/bin/gfortran]
+  ignore line: [Target: aarch64-apple-darwin21]
+  ignore line: [Configured with: ../configure --prefix=/opt/homebrew/opt/gcc --libdir=/opt/homebrew/opt/gcc/lib/gcc/11 --disable-nls --enable-checking=release --with-gcc-major-version-only --enable-languages=c c++ objc obj-c++ fortran --program-suffix=-11 --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-zstd=/opt/homebrew/opt/zstd --with-pkgversion='Homebrew GCC 11.3.0_2' --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --build=aarch64-apple-darwin21 --with-system-zlib --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.3.0 (Homebrew GCC 11.3.0_2) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-I' '/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules' '-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk' '-v' '-fpreprocessed' '-c' '-o' 'CMakeFiles/cmTC_f4f26.dir/CMakeFortranCompilerABI.F90.o' '-mmacosx-version-min=12.0.0' '-asm_macosx_version_min=12.0' '-nodefaultexport' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_f4f26.dir/']
+  ignore line: [ /opt/homebrew/Cellar/gcc/11.3.0_2/bin/../libexec/gcc/aarch64-apple-darwin21/11/f951 CMakeFiles/cmTC_f4f26.dir/CMakeFortranCompilerABI.F90-pp.f90 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -I /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules -fPIC -quiet -dumpdir CMakeFiles/cmTC_f4f26.dir/ -dumpbase CMakeFortranCompilerABI.F90.f90 -dumpbase-ext .f90 -mmacosx-version-min=12.0.0 -mlittle-endian -mabi=lp64 -version -fpreprocessed -fintrinsic-modules-path /opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/finclude -o /var/folders/jt/_5j2fynd1x57hvkpg988z99h0000gn/T//ccrBWnj8.s]
+  ignore line: [GNU Fortran (Homebrew GCC 11.3.0_2) version 11.3.0 (aarch64-apple-darwin21)]
+  ignore line: [	compiled by GNU C version 11.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [GNU Fortran2008 (Homebrew GCC 11.3.0_2) version 11.3.0 (aarch64-apple-darwin21)]
+  ignore line: [	compiled by GNU C version 11.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [COLLECT_GCC_OPTIONS='-I' '/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules' '-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk' '-v' '-fpreprocessed' '-c' '-o' 'CMakeFiles/cmTC_f4f26.dir/CMakeFortranCompilerABI.F90.o' '-mmacosx-version-min=12.0.0'  '-nodefaultexport' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_f4f26.dir/']
+  ignore line: [ as -arch arm64 -v -I /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules -mmacosx-version-min=12.0 -o CMakeFiles/cmTC_f4f26.dir/CMakeFortranCompilerABI.F90.o /var/folders/jt/_5j2fynd1x57hvkpg988z99h0000gn/T//ccrBWnj8.s]
+  ignore line: [Apple clang version 13.1.6 (clang-1316.0.21.2.5)]
+  ignore line: [Target: arm64-apple-darwin21.5.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+  ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1as -triple arm64-apple-macosx12.0.0 -filetype obj -main-file-name ccrBWnj8.s -target-cpu apple-m1 -target-feature +v8.5a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp16fml -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -I /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules -fdebug-compilation-dir=/Users/rainchen/CodingArea/Fortran-Example/example2-1/cmake-build-debug/CMakeFiles/CMakeTmp -dwarf-debug-producer "Apple clang version 13.1.6 (clang-1316.0.21.2.5)" -I /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules -dwarf-version=4 -mrelocation-model pic --mrelax-relocations -mllvm -disable-aligned-alloc-awareness=1 -o CMakeFiles/cmTC_f4f26.dir/CMakeFortranCompilerABI.F90.o /var/folders/jt/_5j2fynd1x57hvkpg988z99h0000gn/T//ccrBWnj8.s]
+  ignore line: [COMPILER_PATH=/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../libexec/gcc/aarch64-apple-darwin21/11/:/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../libexec/gcc/]
+  ignore line: [LIBRARY_PATH=/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/:/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/:/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-I' '/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules' '-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk' '-v' '-fpreprocessed' '-c' '-o' 'CMakeFiles/cmTC_f4f26.dir/CMakeFortranCompilerABI.F90.o' '-mmacosx-version-min=12.0.0'  '-nodefaultexport' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_f4f26.dir/CMakeFortranCompilerABI.F90.']
+  ignore line: [[4/4] Linking Fortran executable cmTC_f4f26]
+  ignore line: [Driving: /opt/homebrew/bin/gfortran -v -Wl -v -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk CMakeFiles/cmTC_f4f26.dir/CMakeFortranCompilerABI.F90.o -o cmTC_f4f26 -mmacosx-version-min=12.0.0 -asm_macosx_version_min=12.0 -nodefaultexport -l gfortran]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/homebrew/bin/gfortran]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../libexec/gcc/aarch64-apple-darwin21/11/lto-wrapper]
+  ignore line: [Target: aarch64-apple-darwin21]
+  ignore line: [Configured with: ../configure --prefix=/opt/homebrew/opt/gcc --libdir=/opt/homebrew/opt/gcc/lib/gcc/11 --disable-nls --enable-checking=release --with-gcc-major-version-only --enable-languages=c c++ objc obj-c++ fortran --program-suffix=-11 --with-gmp=/opt/homebrew/opt/gmp --with-mpfr=/opt/homebrew/opt/mpfr --with-mpc=/opt/homebrew/opt/libmpc --with-isl=/opt/homebrew/opt/isl --with-zstd=/opt/homebrew/opt/zstd --with-pkgversion='Homebrew GCC 11.3.0_2' --with-bugurl=https://github.com/Homebrew/homebrew-core/issues --build=aarch64-apple-darwin21 --with-system-zlib --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.3.0 (Homebrew GCC 11.3.0_2) ]
+  ignore line: [Reading specs from /opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/../../../libgfortran.spec]
+  ignore line: [rename spec lib to liborig]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk' '-o' 'cmTC_f4f26' '-mmacosx-version-min=12.0.0' '-asm_macosx_version_min=12.0' '-nodefaultexport' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_f4f26-']
+  ignore line: [COMPILER_PATH=/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../libexec/gcc/aarch64-apple-darwin21/11/:/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../libexec/gcc/]
+  ignore line: [LIBRARY_PATH=/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/:/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/:/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-isysroot' '/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk' '-o' 'cmTC_f4f26' '-mmacosx-version-min=12.0.0' '-asm_macosx_version_min=12.0' '-nodefaultexport' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_f4f26.']
+  link line: [ /opt/homebrew/Cellar/gcc/11.3.0_2/bin/../libexec/gcc/aarch64-apple-darwin21/11/collect2 -dynamic -arch arm64 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -macosx_version_min 12.0.0 -o cmTC_f4f26 -L/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11 -L/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc -L/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/../../.. -v CMakeFiles/cmTC_f4f26.dir/CMakeFortranCompilerABI.F90.o -lgfortran -lemutls_w -lgcc -lquadmath -lemutls_w -lgcc -lSystem -lgcc -no_compact_unwind -rpath @loader_path -rpath /opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11/gcc/aarch64-apple-darwin21/11 -rpath /opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11/gcc -rpath /opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11]
+    arg [/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../libexec/gcc/aarch64-apple-darwin21/11/collect2] ==> ignore
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [arm64] ==> ignore
+    arg [-syslibroot] ==> ignore
+    arg [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [12.0.0] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_f4f26] ==> ignore
+    arg [-L/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11] ==> dir [/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11]
+    arg [-L/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc] ==> dir [/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc]
+    arg [-L/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/../../..] ==> dir [/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/../../..]
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTC_f4f26.dir/CMakeFortranCompilerABI.F90.o] ==> ignore
+    arg [-lgfortran] ==> lib [gfortran]
+    arg [-lemutls_w] ==> lib [emutls_w]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lquadmath] ==> lib [quadmath]
+    arg [-lemutls_w] ==> lib [emutls_w]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lSystem] ==> lib [System]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-no_compact_unwind] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [@loader_path] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11/gcc/aarch64-apple-darwin21/11] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11/gcc] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11] ==> ignore
+  Library search paths: [;/opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11/gcc/aarch64-apple-darwin21/11;/opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11/gcc;/opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11;/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib]
+  Framework search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/]
+  remove lib [System]
+  collapse library dir [/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11] ==> [/opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11/gcc/aarch64-apple-darwin21/11]
+  collapse library dir [/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc] ==> [/opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11/gcc]
+  collapse library dir [/opt/homebrew/Cellar/gcc/11.3.0_2/bin/../lib/gcc/11/gcc/aarch64-apple-darwin21/11/../../..] ==> [/opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11]
+  collapse library dir [/opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11/gcc/aarch64-apple-darwin21/11] ==> [/opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11/gcc/aarch64-apple-darwin21/11]
+  collapse library dir [/opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11/gcc] ==> [/opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11/gcc]
+  collapse library dir [/opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11] ==> [/opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11]
+  collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib]
+  collapse framework dir [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks]
+  implicit libs: [gfortran;emutls_w;gcc;quadmath;emutls_w;gcc;gcc]
+  implicit objs: []
+  implicit dirs: [/opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11/gcc/aarch64-apple-darwin21/11;/opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11/gcc;/opt/homebrew/Cellar/gcc/11.3.0_2/lib/gcc/11;/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib]
+  implicit fwks: [/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks]
+
+

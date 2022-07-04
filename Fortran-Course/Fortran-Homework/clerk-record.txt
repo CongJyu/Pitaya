@@ -1,0 +1,10 @@
+01 Alice 24 Ad 13000
+02 Bob 23 Sale 10000
+03 Cathy 25 Manager 11000
+04 David 28 Ad 9500
+05 Eve 23 Sale 9000
+06 Faythe 26 Ad 7000
+07 Grace 25 Sale 10000
+08 Heidi 28 Ad 12000
+09 Ivan 24 Ad 8000
+10 Judy 29 Manager 19000

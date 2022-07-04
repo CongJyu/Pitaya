@@ -1,0 +1,13 @@
+{
+	"compiler-id" : "GNU",
+	"dir-cur-bld" : "/Users/rainchen/CodingSpace/Fortran-Example/example11-4/cmake-build-debug",
+	"dir-cur-src" : "/Users/rainchen/CodingSpace/Fortran-Example/example11-4",
+	"dir-top-bld" : "/Users/rainchen/CodingSpace/Fortran-Example/example11-4/cmake-build-debug",
+	"dir-top-src" : "/Users/rainchen/CodingSpace/Fortran-Example/example11-4",
+	"include-dirs" : [],
+	"language" : "Fortran",
+	"linked-target-dirs" : [],
+	"module-dir" : "/Users/rainchen/CodingSpace/Fortran-Example/example11-4/cmake-build-debug",
+	"submodule-ext" : ".smod",
+	"submodule-sep" : "@"
+}

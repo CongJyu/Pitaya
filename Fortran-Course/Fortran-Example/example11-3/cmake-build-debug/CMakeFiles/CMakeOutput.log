@@ -1,0 +1,289 @@
+The system is: Darwin - 21.3.0 - arm64
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" succeeded.
+Compiler: /usr/local/bin/gfortran 
+Build flags: 
+Id flags: -v 
+
+The output was:
+0
+Driving: /usr/local/bin/gfortran -v CMakeFortranCompilerId.F -mmacosx-version-min=11.1.0 -asm_macosx_version_min=11.1 -l gfortran
+Using built-in specs.
+COLLECT_GCC=/usr/local/bin/gfortran
+COLLECT_LTO_WRAPPER=/usr/local/gfortran/libexec/gcc/aarch64-apple-darwin20.2.0/11.0.0/lto-wrapper
+Target: aarch64-apple-darwin20.2.0
+Configured with: ../gcc-darwin-arm64/configure --prefix=/usr/local/gfortran --with-gmp=/Users/brew/FX/deps --with-isl=/Users/brew/FX/deps --enable-languages=c,c++,fortran,objc,obj-c++ --build=aarch64-apple-darwin20.2.0 --with-native-system-header-dir=/usr/include --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.0.0 20201205 (experimental) (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-mmacosx-version-min=11.1.0' '-asm_macosx_version_min=11.1' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'a-'
+ /usr/local/gfortran/libexec/gcc/aarch64-apple-darwin20.2.0/11.0.0/f951 CMakeFortranCompilerId.F -ffixed-form -cpp=/var/folders/_j/lkkgmjv95m30xx2jf69vx8g40000gn/T//ccGWyK7V.f90 -quiet -v -D__DYNAMIC__ CMakeFortranCompilerId.F -fPIC -quiet -dumpdir a- -dumpbase CMakeFortranCompilerId.F -dumpbase-ext .F -mmacosx-version-min=11.1.0 -mlittle-endian -mabi=lp64 -version -fintrinsic-modules-path /usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/finclude -o /var/folders/_j/lkkgmjv95m30xx2jf69vx8g40000gn/T//cciNLWqG.s
+GNU Fortran (GCC) version 11.0.0 20201205 (experimental) (aarch64-apple-darwin20.2.0)
+	compiled by GNU C version 11.0.0 20201205 (experimental), GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"
+ignoring nonexistent directory "/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/../../../../aarch64-apple-darwin20.2.0/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/finclude
+ /usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/include
+ /usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/include-fixed
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
+End of search list.
+GNU Fortran2008 (GCC) version 11.0.0 20201205 (experimental) (aarch64-apple-darwin20.2.0)
+	compiled by GNU C version 11.0.0 20201205 (experimental), GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+COLLECT_GCC_OPTIONS='-v' '-mmacosx-version-min=11.1.0'  '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'a-'
+ as -arch arm64 -v -mmacosx-version-min=11.1 -o /var/folders/_j/lkkgmjv95m30xx2jf69vx8g40000gn/T//ccXR1pjt.o /var/folders/_j/lkkgmjv95m30xx2jf69vx8g40000gn/T//cciNLWqG.s
+Apple clang version 13.0.0 (clang-1300.0.29.30)
+Target: arm64-apple-darwin21.3.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1as -triple arm64-apple-macosx11.1.0 -filetype obj -main-file-name cciNLWqG.s -target-cpu apple-m1 -target-feature +v8.5a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp16fml -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -fdebug-compilation-dir /Users/rainchen/CodingSpace/Fortran-Example/example11-3/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdFortran -dwarf-debug-producer "Apple clang version 13.0.0 (clang-1300.0.29.30)" -dwarf-version=4 -mrelocation-model pic --mrelax-relocations -mllvm -disable-aligned-alloc-awareness=1 -mllvm -enable-dse-memoryssa=0 -o /var/folders/_j/lkkgmjv95m30xx2jf69vx8g40000gn/T//ccXR1pjt.o /var/folders/_j/lkkgmjv95m30xx2jf69vx8g40000gn/T//cciNLWqG.s
+Reading specs from /usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/../../../libgfortran.spec
+rename spec lib to liborig
+COLLECT_GCC_OPTIONS='-v' '-mmacosx-version-min=11.1.0'  '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'a-'
+COMPILER_PATH=/usr/local/gfortran/libexec/gcc/aarch64-apple-darwin20.2.0/11.0.0/:/usr/local/gfortran/libexec/gcc/aarch64-apple-darwin20.2.0/11.0.0/:/usr/local/gfortran/libexec/gcc/aarch64-apple-darwin20.2.0/:/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/:/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/
+LIBRARY_PATH=/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/:/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/../../../
+COLLECT_GCC_OPTIONS='-v' '-mmacosx-version-min=11.1.0'  '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'a.'
+ /usr/local/gfortran/libexec/gcc/aarch64-apple-darwin20.2.0/11.0.0/collect2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/ -dynamic -arch arm64 -macosx_version_min 11.1.0 -weak_reference_mismatches non-weak -o a.out -L/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0 -L/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/../../.. /var/folders/_j/lkkgmjv95m30xx2jf69vx8g40000gn/T//ccXR1pjt.o -lgfortran -lemutls_w -lgcc -lm -lemutls_w -lgcc -lSystem -lgcc -no_compact_unwind -v
+collect2 version 11.0.0 20201205 (experimental)
+/usr/bin/ld -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/ -dynamic -arch arm64 -macosx_version_min 11.1.0 -weak_reference_mismatches non-weak -o a.out -L/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0 -L/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/../../.. /var/folders/_j/lkkgmjv95m30xx2jf69vx8g40000gn/T//ccXR1pjt.o -lgfortran -lemutls_w -lgcc -lm -lemutls_w -lgcc -lSystem -lgcc -no_compact_unwind -v
+@(#)PROGRAM:ld  PROJECT:ld64-711
+BUILD 21:57:24 Nov 17 2021
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0
+	/usr/local/gfortran/lib
+	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
+Framework search paths:
+	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/
+
+
+Compilation of the Fortran compiler identification source "CMakeFortranCompilerId.F" produced "a.out"
+
+The Fortran compiler identification is GNU, found in "/Users/rainchen/CodingSpace/Fortran-Example/example11-3/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdFortran/a.out"
+
+Detecting Fortran compiler ABI info compiled with the following output:
+Change Dir: /Users/rainchen/CodingSpace/Fortran-Example/example11-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_e44b7 && [1/4] Building Fortran preprocessed CMakeFiles/cmTC_e44b7.dir/CMakeFortranCompilerABI.F-pp.f
+Using built-in specs.
+COLLECT_GCC=/usr/local/bin/gfortran
+Target: aarch64-apple-darwin20.2.0
+Configured with: ../gcc-darwin-arm64/configure --prefix=/usr/local/gfortran --with-gmp=/Users/brew/FX/deps --with-isl=/Users/brew/FX/deps --enable-languages=c,c++,fortran,objc,obj-c++ --build=aarch64-apple-darwin20.2.0 --with-native-system-header-dir=/usr/include --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.0.0 20201205 (experimental) (GCC) 
+COLLECT_GCC_OPTIONS='-cpp' '-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk' '-v' '-E' '-o' 'CMakeFiles/cmTC_e44b7.dir/CMakeFortranCompilerABI.F-pp.f' '-mmacosx-version-min=11.1.0' '-asm_macosx_version_min=11.1' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e44b7.dir/'
+ /usr/local/gfortran/libexec/gcc/aarch64-apple-darwin20.2.0/11.0.0/f951 /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeFortranCompilerABI.F -ffixed-form -cpp=/var/folders/_j/lkkgmjv95m30xx2jf69vx8g40000gn/T//cc0mLNMn.f90 -E -quiet -v -D__DYNAMIC__ -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeFortranCompilerABI.F -o CMakeFiles/cmTC_e44b7.dir/CMakeFortranCompilerABI.F-pp.f -dumpdir CMakeFiles/cmTC_e44b7.dir/ -dumpbase CMakeFortranCompilerABI.F-pp.F -dumpbase-ext .F -fPIC -mmacosx-version-min=11.1.0 -mlittle-endian -mabi=lp64 -fsyntax-only
+ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/local/include"
+ignoring nonexistent directory "/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/../../../../aarch64-apple-darwin20.2.0/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/include
+ /usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/include-fixed
+ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include
+End of search list.
+COMPILER_PATH=/usr/local/gfortran/libexec/gcc/aarch64-apple-darwin20.2.0/11.0.0/:/usr/local/gfortran/libexec/gcc/aarch64-apple-darwin20.2.0/11.0.0/:/usr/local/gfortran/libexec/gcc/aarch64-apple-darwin20.2.0/:/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/:/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/
+LIBRARY_PATH=/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/:/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/../../../
+COLLECT_GCC_OPTIONS='-cpp' '-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk' '-v' '-E' '-o' 'CMakeFiles/cmTC_e44b7.dir/CMakeFortranCompilerABI.F-pp.f' '-mmacosx-version-min=11.1.0' '-asm_macosx_version_min=11.1' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e44b7.dir/CMakeFortranCompilerABI.F-pp.'
+[2/4] Generating Fortran dyndep file CMakeFiles/cmTC_e44b7.dir/Fortran.dd
+[3/4] Building Fortran object CMakeFiles/cmTC_e44b7.dir/CMakeFortranCompilerABI.F.o
+Using built-in specs.
+COLLECT_GCC=/usr/local/bin/gfortran
+Target: aarch64-apple-darwin20.2.0
+Configured with: ../gcc-darwin-arm64/configure --prefix=/usr/local/gfortran --with-gmp=/Users/brew/FX/deps --with-isl=/Users/brew/FX/deps --enable-languages=c,c++,fortran,objc,obj-c++ --build=aarch64-apple-darwin20.2.0 --with-native-system-header-dir=/usr/include --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.0.0 20201205 (experimental) (GCC) 
+COLLECT_GCC_OPTIONS='-I' '/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules' '-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk' '-v' '-fpreprocessed' '-c' '-o' 'CMakeFiles/cmTC_e44b7.dir/CMakeFortranCompilerABI.F.o' '-mmacosx-version-min=11.1.0' '-asm_macosx_version_min=11.1' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e44b7.dir/'
+ /usr/local/gfortran/libexec/gcc/aarch64-apple-darwin20.2.0/11.0.0/f951 CMakeFiles/cmTC_e44b7.dir/CMakeFortranCompilerABI.F-pp.f -ffixed-form -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -I /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules -fPIC -quiet -dumpdir CMakeFiles/cmTC_e44b7.dir/ -dumpbase CMakeFortranCompilerABI.F.f -dumpbase-ext .f -mmacosx-version-min=11.1.0 -mlittle-endian -mabi=lp64 -version -fpreprocessed -fintrinsic-modules-path /usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/finclude -o /var/folders/_j/lkkgmjv95m30xx2jf69vx8g40000gn/T//cc1f26TF.s
+GNU Fortran (GCC) version 11.0.0 20201205 (experimental) (aarch64-apple-darwin20.2.0)
+	compiled by GNU C version 11.0.0 20201205 (experimental), GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+GNU Fortran2008 (GCC) version 11.0.0 20201205 (experimental) (aarch64-apple-darwin20.2.0)
+	compiled by GNU C version 11.0.0 20201205 (experimental), GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+COLLECT_GCC_OPTIONS='-I' '/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules' '-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk' '-v' '-fpreprocessed' '-c' '-o' 'CMakeFiles/cmTC_e44b7.dir/CMakeFortranCompilerABI.F.o' '-mmacosx-version-min=11.1.0'  '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e44b7.dir/'
+ as -arch arm64 -v -I /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules -mmacosx-version-min=11.1 -o CMakeFiles/cmTC_e44b7.dir/CMakeFortranCompilerABI.F.o /var/folders/_j/lkkgmjv95m30xx2jf69vx8g40000gn/T//cc1f26TF.s
+Apple clang version 13.0.0 (clang-1300.0.29.30)
+Target: arm64-apple-darwin21.3.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1as -triple arm64-apple-macosx11.1.0 -filetype obj -main-file-name cc1f26TF.s -target-cpu apple-m1 -target-feature +v8.5a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp16fml -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -I /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules -fdebug-compilation-dir /Users/rainchen/CodingSpace/Fortran-Example/example11-3/cmake-build-debug/CMakeFiles/CMakeTmp -dwarf-debug-producer "Apple clang version 13.0.0 (clang-1300.0.29.30)" -I /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules -dwarf-version=4 -mrelocation-model pic --mrelax-relocations -mllvm -disable-aligned-alloc-awareness=1 -mllvm -enable-dse-memoryssa=0 -o CMakeFiles/cmTC_e44b7.dir/CMakeFortranCompilerABI.F.o /var/folders/_j/lkkgmjv95m30xx2jf69vx8g40000gn/T//cc1f26TF.s
+COMPILER_PATH=/usr/local/gfortran/libexec/gcc/aarch64-apple-darwin20.2.0/11.0.0/:/usr/local/gfortran/libexec/gcc/aarch64-apple-darwin20.2.0/11.0.0/:/usr/local/gfortran/libexec/gcc/aarch64-apple-darwin20.2.0/:/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/:/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/
+LIBRARY_PATH=/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/:/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/../../../
+COLLECT_GCC_OPTIONS='-I' '/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules' '-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk' '-v' '-fpreprocessed' '-c' '-o' 'CMakeFiles/cmTC_e44b7.dir/CMakeFortranCompilerABI.F.o' '-mmacosx-version-min=11.1.0'  '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e44b7.dir/CMakeFortranCompilerABI.F.'
+[4/4] Linking Fortran executable cmTC_e44b7
+Driving: /usr/local/bin/gfortran -v -Wl,-v -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk CMakeFiles/cmTC_e44b7.dir/CMakeFortranCompilerABI.F.o -o cmTC_e44b7 -mmacosx-version-min=11.1.0 -asm_macosx_version_min=11.1 -l gfortran
+Using built-in specs.
+COLLECT_GCC=/usr/local/bin/gfortran
+COLLECT_LTO_WRAPPER=/usr/local/gfortran/libexec/gcc/aarch64-apple-darwin20.2.0/11.0.0/lto-wrapper
+Target: aarch64-apple-darwin20.2.0
+Configured with: ../gcc-darwin-arm64/configure --prefix=/usr/local/gfortran --with-gmp=/Users/brew/FX/deps --with-isl=/Users/brew/FX/deps --enable-languages=c,c++,fortran,objc,obj-c++ --build=aarch64-apple-darwin20.2.0 --with-native-system-header-dir=/usr/include --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.0.0 20201205 (experimental) (GCC) 
+Reading specs from /usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/../../../libgfortran.spec
+rename spec lib to liborig
+COLLECT_GCC_OPTIONS='-v' '-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk' '-o' 'cmTC_e44b7' '-mmacosx-version-min=11.1.0' '-asm_macosx_version_min=11.1' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_e44b7-'
+COMPILER_PATH=/usr/local/gfortran/libexec/gcc/aarch64-apple-darwin20.2.0/11.0.0/:/usr/local/gfortran/libexec/gcc/aarch64-apple-darwin20.2.0/11.0.0/:/usr/local/gfortran/libexec/gcc/aarch64-apple-darwin20.2.0/:/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/:/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/
+LIBRARY_PATH=/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/:/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/../../../
+COLLECT_GCC_OPTIONS='-v' '-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk' '-o' 'cmTC_e44b7' '-mmacosx-version-min=11.1.0' '-asm_macosx_version_min=11.1' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_e44b7.'
+ /usr/local/gfortran/libexec/gcc/aarch64-apple-darwin20.2.0/11.0.0/collect2 -dynamic -arch arm64 -macosx_version_min 11.1.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -weak_reference_mismatches non-weak -o cmTC_e44b7 -L/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0 -L/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/../../.. -v CMakeFiles/cmTC_e44b7.dir/CMakeFortranCompilerABI.F.o -lgfortran -lemutls_w -lgcc -lm -lemutls_w -lgcc -lSystem -lgcc -no_compact_unwind -v
+collect2 version 11.0.0 20201205 (experimental)
+/usr/bin/ld -dynamic -arch arm64 -macosx_version_min 11.1.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -weak_reference_mismatches non-weak -o cmTC_e44b7 -L/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0 -L/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/../../.. -v CMakeFiles/cmTC_e44b7.dir/CMakeFortranCompilerABI.F.o -lgfortran -lemutls_w -lgcc -lm -lemutls_w -lgcc -lSystem -lgcc -no_compact_unwind -v
+@(#)PROGRAM:ld  PROJECT:ld64-711
+BUILD 21:57:24 Nov 17 2021
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+@(#)PROGRAM:ld  PROJECT:ld64-711
+BUILD 21:57:24 Nov 17 2021
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0
+	/usr/local/gfortran/lib
+	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib
+Framework search paths:
+	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/
+
+
+
+Parsed Fortran implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/include]
+    add: [/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/include-fixed]
+    add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include]
+  end of search list found
+  collapse include dir [/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/include] ==> [/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/include]
+  collapse include dir [/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/include-fixed] ==> [/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/include-fixed]
+  collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include]
+  implicit include dirs: [/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/include;/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/include-fixed;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include]
+
+
+Parsed Fortran implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/rainchen/CodingSpace/Fortran-Example/example11-3/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_e44b7 && [1/4] Building Fortran preprocessed CMakeFiles/cmTC_e44b7.dir/CMakeFortranCompilerABI.F-pp.f]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/local/bin/gfortran]
+  ignore line: [Target: aarch64-apple-darwin20.2.0]
+  ignore line: [Configured with: ../gcc-darwin-arm64/configure --prefix=/usr/local/gfortran --with-gmp=/Users/brew/FX/deps --with-isl=/Users/brew/FX/deps --enable-languages=c c++ fortran objc obj-c++ --build=aarch64-apple-darwin20.2.0 --with-native-system-header-dir=/usr/include --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.0.0 20201205 (experimental) (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-cpp' '-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk' '-v' '-E' '-o' 'CMakeFiles/cmTC_e44b7.dir/CMakeFortranCompilerABI.F-pp.f' '-mmacosx-version-min=11.1.0' '-asm_macosx_version_min=11.1' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e44b7.dir/']
+  ignore line: [ /usr/local/gfortran/libexec/gcc/aarch64-apple-darwin20.2.0/11.0.0/f951 /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeFortranCompilerABI.F -ffixed-form -cpp=/var/folders/_j/lkkgmjv95m30xx2jf69vx8g40000gn/T//cc0mLNMn.f90 -E -quiet -v -D__DYNAMIC__ -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeFortranCompilerABI.F -o CMakeFiles/cmTC_e44b7.dir/CMakeFortranCompilerABI.F-pp.f -dumpdir CMakeFiles/cmTC_e44b7.dir/ -dumpbase CMakeFortranCompilerABI.F-pp.F -dumpbase-ext .F -fPIC -mmacosx-version-min=11.1.0 -mlittle-endian -mabi=lp64 -fsyntax-only]
+  ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/../../../../aarch64-apple-darwin20.2.0/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/include]
+  ignore line: [ /usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/include-fixed]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include]
+  ignore line: [End of search list.]
+  ignore line: [COMPILER_PATH=/usr/local/gfortran/libexec/gcc/aarch64-apple-darwin20.2.0/11.0.0/:/usr/local/gfortran/libexec/gcc/aarch64-apple-darwin20.2.0/11.0.0/:/usr/local/gfortran/libexec/gcc/aarch64-apple-darwin20.2.0/:/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/:/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/]
+  ignore line: [LIBRARY_PATH=/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/:/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-cpp' '-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk' '-v' '-E' '-o' 'CMakeFiles/cmTC_e44b7.dir/CMakeFortranCompilerABI.F-pp.f' '-mmacosx-version-min=11.1.0' '-asm_macosx_version_min=11.1' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e44b7.dir/CMakeFortranCompilerABI.F-pp.']
+  ignore line: [[2/4] Generating Fortran dyndep file CMakeFiles/cmTC_e44b7.dir/Fortran.dd]
+  ignore line: [[3/4] Building Fortran object CMakeFiles/cmTC_e44b7.dir/CMakeFortranCompilerABI.F.o]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/local/bin/gfortran]
+  ignore line: [Target: aarch64-apple-darwin20.2.0]
+  ignore line: [Configured with: ../gcc-darwin-arm64/configure --prefix=/usr/local/gfortran --with-gmp=/Users/brew/FX/deps --with-isl=/Users/brew/FX/deps --enable-languages=c c++ fortran objc obj-c++ --build=aarch64-apple-darwin20.2.0 --with-native-system-header-dir=/usr/include --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.0.0 20201205 (experimental) (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-I' '/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules' '-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk' '-v' '-fpreprocessed' '-c' '-o' 'CMakeFiles/cmTC_e44b7.dir/CMakeFortranCompilerABI.F.o' '-mmacosx-version-min=11.1.0' '-asm_macosx_version_min=11.1' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e44b7.dir/']
+  ignore line: [ /usr/local/gfortran/libexec/gcc/aarch64-apple-darwin20.2.0/11.0.0/f951 CMakeFiles/cmTC_e44b7.dir/CMakeFortranCompilerABI.F-pp.f -ffixed-form -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -I /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules -fPIC -quiet -dumpdir CMakeFiles/cmTC_e44b7.dir/ -dumpbase CMakeFortranCompilerABI.F.f -dumpbase-ext .f -mmacosx-version-min=11.1.0 -mlittle-endian -mabi=lp64 -version -fpreprocessed -fintrinsic-modules-path /usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/finclude -o /var/folders/_j/lkkgmjv95m30xx2jf69vx8g40000gn/T//cc1f26TF.s]
+  ignore line: [GNU Fortran (GCC) version 11.0.0 20201205 (experimental) (aarch64-apple-darwin20.2.0)]
+  ignore line: [	compiled by GNU C version 11.0.0 20201205 (experimental)  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096]
+  ignore line: [GNU Fortran2008 (GCC) version 11.0.0 20201205 (experimental) (aarch64-apple-darwin20.2.0)]
+  ignore line: [	compiled by GNU C version 11.0.0 20201205 (experimental)  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096]
+  ignore line: [COLLECT_GCC_OPTIONS='-I' '/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules' '-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk' '-v' '-fpreprocessed' '-c' '-o' 'CMakeFiles/cmTC_e44b7.dir/CMakeFortranCompilerABI.F.o' '-mmacosx-version-min=11.1.0'  '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e44b7.dir/']
+  ignore line: [ as -arch arm64 -v -I /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules -mmacosx-version-min=11.1 -o CMakeFiles/cmTC_e44b7.dir/CMakeFortranCompilerABI.F.o /var/folders/_j/lkkgmjv95m30xx2jf69vx8g40000gn/T//cc1f26TF.s]
+  ignore line: [Apple clang version 13.0.0 (clang-1300.0.29.30)]
+  ignore line: [Target: arm64-apple-darwin21.3.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+  ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1as -triple arm64-apple-macosx11.1.0 -filetype obj -main-file-name cc1f26TF.s -target-cpu apple-m1 -target-feature +v8.5a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp16fml -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -I /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules -fdebug-compilation-dir /Users/rainchen/CodingSpace/Fortran-Example/example11-3/cmake-build-debug/CMakeFiles/CMakeTmp -dwarf-debug-producer "Apple clang version 13.0.0 (clang-1300.0.29.30)" -I /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules -dwarf-version=4 -mrelocation-model pic --mrelax-relocations -mllvm -disable-aligned-alloc-awareness=1 -mllvm -enable-dse-memoryssa=0 -o CMakeFiles/cmTC_e44b7.dir/CMakeFortranCompilerABI.F.o /var/folders/_j/lkkgmjv95m30xx2jf69vx8g40000gn/T//cc1f26TF.s]
+  ignore line: [COMPILER_PATH=/usr/local/gfortran/libexec/gcc/aarch64-apple-darwin20.2.0/11.0.0/:/usr/local/gfortran/libexec/gcc/aarch64-apple-darwin20.2.0/11.0.0/:/usr/local/gfortran/libexec/gcc/aarch64-apple-darwin20.2.0/:/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/:/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/]
+  ignore line: [LIBRARY_PATH=/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/:/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-I' '/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules' '-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk' '-v' '-fpreprocessed' '-c' '-o' 'CMakeFiles/cmTC_e44b7.dir/CMakeFortranCompilerABI.F.o' '-mmacosx-version-min=11.1.0'  '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_e44b7.dir/CMakeFortranCompilerABI.F.']
+  ignore line: [[4/4] Linking Fortran executable cmTC_e44b7]
+  ignore line: [Driving: /usr/local/bin/gfortran -v -Wl -v -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk CMakeFiles/cmTC_e44b7.dir/CMakeFortranCompilerABI.F.o -o cmTC_e44b7 -mmacosx-version-min=11.1.0 -asm_macosx_version_min=11.1 -l gfortran]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/local/bin/gfortran]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/local/gfortran/libexec/gcc/aarch64-apple-darwin20.2.0/11.0.0/lto-wrapper]
+  ignore line: [Target: aarch64-apple-darwin20.2.0]
+  ignore line: [Configured with: ../gcc-darwin-arm64/configure --prefix=/usr/local/gfortran --with-gmp=/Users/brew/FX/deps --with-isl=/Users/brew/FX/deps --enable-languages=c c++ fortran objc obj-c++ --build=aarch64-apple-darwin20.2.0 --with-native-system-header-dir=/usr/include --with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.0.0 20201205 (experimental) (GCC) ]
+  ignore line: [Reading specs from /usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/../../../libgfortran.spec]
+  ignore line: [rename spec lib to liborig]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk' '-o' 'cmTC_e44b7' '-mmacosx-version-min=11.1.0' '-asm_macosx_version_min=11.1' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_e44b7-']
+  ignore line: [COMPILER_PATH=/usr/local/gfortran/libexec/gcc/aarch64-apple-darwin20.2.0/11.0.0/:/usr/local/gfortran/libexec/gcc/aarch64-apple-darwin20.2.0/11.0.0/:/usr/local/gfortran/libexec/gcc/aarch64-apple-darwin20.2.0/:/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/:/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/]
+  ignore line: [LIBRARY_PATH=/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/:/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk' '-o' 'cmTC_e44b7' '-mmacosx-version-min=11.1.0' '-asm_macosx_version_min=11.1' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_e44b7.']
+  link line: [ /usr/local/gfortran/libexec/gcc/aarch64-apple-darwin20.2.0/11.0.0/collect2 -dynamic -arch arm64 -macosx_version_min 11.1.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -weak_reference_mismatches non-weak -o cmTC_e44b7 -L/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0 -L/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/../../.. -v CMakeFiles/cmTC_e44b7.dir/CMakeFortranCompilerABI.F.o -lgfortran -lemutls_w -lgcc -lm -lemutls_w -lgcc -lSystem -lgcc -no_compact_unwind -v]
+    arg [/usr/local/gfortran/libexec/gcc/aarch64-apple-darwin20.2.0/11.0.0/collect2] ==> ignore
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [arm64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [11.1.0] ==> ignore
+    arg [-syslibroot] ==> ignore
+    arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk] ==> ignore
+    arg [-weak_reference_mismatches] ==> ignore
+    arg [non-weak] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_e44b7] ==> ignore
+    arg [-L/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0] ==> dir [/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0]
+    arg [-L/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/../../..] ==> dir [/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/../../..]
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTC_e44b7.dir/CMakeFortranCompilerABI.F.o] ==> ignore
+    arg [-lgfortran] ==> lib [gfortran]
+    arg [-lemutls_w] ==> lib [emutls_w]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lm] ==> lib [m]
+    arg [-lemutls_w] ==> lib [emutls_w]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lSystem] ==> lib [System]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-no_compact_unwind] ==> ignore
+    arg [-v] ==> ignore
+  Library search paths: [;/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0;/usr/local/gfortran/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib]
+  Framework search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/]
+  remove lib [System]
+  collapse library dir [/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0] ==> [/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0]
+  collapse library dir [/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0/../../..] ==> [/usr/local/gfortran/lib]
+  collapse library dir [/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0] ==> [/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0]
+  collapse library dir [/usr/local/gfortran/lib] ==> [/usr/local/gfortran/lib]
+  collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib]
+  collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks]
+  implicit libs: [gfortran;emutls_w;gcc;m;emutls_w;gcc;gcc]
+  implicit objs: []
+  implicit dirs: [/usr/local/gfortran/lib/gcc/aarch64-apple-darwin20.2.0/11.0.0;/usr/local/gfortran/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib]
+  implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks]
+
+
+Determining if the Fortran compiler supports Fortran 90 passed with the following output:
+Change Dir: /Users/rainchen/CodingSpace/Fortran-Example/example11-3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_012d1 && [1/4] Building Fortran preprocessed CMakeFiles/cmTC_012d1.dir/testFortranCompilerF90.f90-pp.f90
+[2/4] Generating Fortran dyndep file CMakeFiles/cmTC_012d1.dir/Fortran.dd
+[3/4] Building Fortran object CMakeFiles/cmTC_012d1.dir/testFortranCompilerF90.f90.o
+[4/4] Linking Fortran executable cmTC_012d1
+
+
+

@@ -1,0 +1,13 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "CMakeFiles/example8_8.dir/main.f90.o",
+			"provides" : [],
+			"requires" : []
+		}
+	],
+	"version" : 0
+}

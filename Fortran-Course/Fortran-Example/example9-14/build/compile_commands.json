@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/rainchen/CodingSpace/Fortran-Example/example9-14/build",
+  "command": "/usr/local/bin/gfortran   -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -c /Users/rainchen/CodingSpace/Fortran-Example/example9-14/main.f90 -o CMakeFiles/example9_14.dir/main.f90.o",
+  "file": "/Users/rainchen/CodingSpace/Fortran-Example/example9-14/main.f90"
+}
+]

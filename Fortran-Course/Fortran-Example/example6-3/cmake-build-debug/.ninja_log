@@ -1,0 +1,6 @@
+# ninja log v5
+1	77	1647754653009328606	CMakeFiles/example6_3.dir/main.f90-pp.f90	d54ed820a05ad7f8
+1	77	1647754653009328606	CMakeFiles/example6_3.dir/main.f90.o.ddi	d54ed820a05ad7f8
+77	84	1647754653017488351	CMakeFiles/example6_3.dir/Fortran.dd	904b2e43b6fc5231
+84	165	1647754653096168924	CMakeFiles/example6_3.dir/main.f90.o	d216cd42b216c66
+165	233	1647754653164428587	example6_3	fe840637904c1f1c
