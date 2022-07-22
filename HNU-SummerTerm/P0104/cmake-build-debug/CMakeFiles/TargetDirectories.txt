@@ -1,0 +1,3 @@
+/Users/rainchen/CodingArea/tmp-cg/P0104/cmake-build-debug/CMakeFiles/P0104.dir
+/Users/rainchen/CodingArea/tmp-cg/P0104/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/rainchen/CodingArea/tmp-cg/P0104/cmake-build-debug/CMakeFiles/rebuild_cache.dir
