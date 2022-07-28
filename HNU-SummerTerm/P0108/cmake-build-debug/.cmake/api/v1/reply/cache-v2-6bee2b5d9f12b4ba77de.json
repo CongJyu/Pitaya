@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/rainchen/CodingArea/tmp-cg/P0108/cmake-build-debug"
+			"value" : "/Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0108/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -515,7 +515,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/rainchen/CodingArea/tmp-cg/P0108"
+			"value" : "/Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0108"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -1087,7 +1087,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/rainchen/CodingArea/tmp-cg/P0108/cmake-build-debug"
+			"value" : "/Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0108/cmake-build-debug"
 		},
 		{
 			"name" : "P0108_IS_TOP_LEVEL",
@@ -1111,7 +1111,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/rainchen/CodingArea/tmp-cg/P0108"
+			"value" : "/Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0108"
 		}
 	],
 	"kind" : "cache",

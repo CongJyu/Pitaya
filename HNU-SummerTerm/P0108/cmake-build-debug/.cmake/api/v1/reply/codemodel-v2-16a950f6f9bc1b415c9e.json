@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/rainchen/CodingArea/tmp-cg/P0108/cmake-build-debug",
-		"source" : "/Users/rainchen/CodingArea/tmp-cg/P0108"
+		"build" : "/Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0108/cmake-build-debug",
+		"source" : "/Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0108"
 	},
 	"version" : 
 	{
