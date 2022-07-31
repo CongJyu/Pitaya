@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/rainchen/CodingArea/tmp-cg/p0102/cmake-build-debug"
+			"value" : "/Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0102/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -515,7 +515,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/rainchen/CodingArea/tmp-cg/p0102"
+			"value" : "/Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0102"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -795,7 +795,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "p0102"
+			"value" : "P0102"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1078,7 +1078,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "p0102_BINARY_DIR",
+			"name" : "P0102_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1087,10 +1087,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/rainchen/CodingArea/tmp-cg/p0102/cmake-build-debug"
+			"value" : "/Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0102/cmake-build-debug"
 		},
 		{
-			"name" : "p0102_IS_TOP_LEVEL",
+			"name" : "P0102_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1102,7 +1102,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "p0102_SOURCE_DIR",
+			"name" : "P0102_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1111,7 +1111,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/rainchen/CodingArea/tmp-cg/p0102"
+			"value" : "/Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0102"
 		}
 	],
 	"kind" : "cache",

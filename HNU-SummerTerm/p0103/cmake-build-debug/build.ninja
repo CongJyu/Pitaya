@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: p0103
+# Project: P0103
 # Configurations: Debug
 # =============================================================================
 
@@ -39,47 +39,47 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/rainchen/CodingArea/tmp-cg/p0103/cmake-build-debug/
+cmake_ninja_workdir = /Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0103/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target p0103
+# Object build statements for EXECUTABLE target P0103
 
 
 #############################################
-# Order-only phony target for p0103
+# Order-only phony target for P0103
 
-build cmake_object_order_depends_target_p0103: phony || CMakeFiles/p0103.dir
+build cmake_object_order_depends_target_P0103: phony || CMakeFiles/P0103.dir
 
-build CMakeFiles/p0103.dir/main.cpp.o: CXX_COMPILER__p0103_Debug /Users/rainchen/CodingArea/tmp-cg/p0103/main.cpp || cmake_object_order_depends_target_p0103
-  DEP_FILE = CMakeFiles/p0103.dir/main.cpp.o.d
+build CMakeFiles/P0103.dir/main.cpp.o: CXX_COMPILER__P0103_Debug /Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0103/main.cpp || cmake_object_order_depends_target_P0103
+  DEP_FILE = CMakeFiles/P0103.dir/main.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
-  OBJECT_DIR = CMakeFiles/p0103.dir
-  OBJECT_FILE_DIR = CMakeFiles/p0103.dir
-  TARGET_COMPILE_PDB = CMakeFiles/p0103.dir/
-  TARGET_PDB = p0103.pdb
+  OBJECT_DIR = CMakeFiles/P0103.dir
+  OBJECT_FILE_DIR = CMakeFiles/P0103.dir
+  TARGET_COMPILE_PDB = CMakeFiles/P0103.dir/
+  TARGET_PDB = P0103.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target p0103
+# Link build statements for EXECUTABLE target P0103
 
 
 #############################################
-# Link the executable p0103
+# Link the executable P0103
 
-build p0103: CXX_EXECUTABLE_LINKER__p0103_Debug CMakeFiles/p0103.dir/main.cpp.o
+build P0103: CXX_EXECUTABLE_LINKER__P0103_Debug CMakeFiles/P0103.dir/main.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
-  OBJECT_DIR = CMakeFiles/p0103.dir
+  OBJECT_DIR = CMakeFiles/P0103.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/p0103.dir/
-  TARGET_FILE = p0103
-  TARGET_PDB = p0103.pdb
+  TARGET_COMPILE_PDB = CMakeFiles/P0103.dir/
+  TARGET_FILE = P0103
+  TARGET_PDB = P0103.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/rainchen/CodingArea/tmp-cg/p0103/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0103/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -90,7 +90,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/rainchen/CodingArea/tmp-cg/p0103/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/rainchen/CodingArea/tmp-cg/p0103 -B/Users/rainchen/CodingArea/tmp-cg/p0103/cmake-build-debug
+  COMMAND = cd /Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0103/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0103 -B/Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0103/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -106,9 +106,9 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /Users/rainchen/CodingArea/tmp-cg/p0103/cmake-build-debug
+# Folder: /Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0103/cmake-build-debug
 
-build all: phony p0103
+build all: phony P0103
 
 # =============================================================================
 # Built-in targets
