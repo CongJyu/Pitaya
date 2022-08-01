@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.22)
-project(P0316)
+project(P0401)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(P0316 main.cpp)
+add_executable(P0401 main.cpp)

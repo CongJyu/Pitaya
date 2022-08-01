@@ -1,3 +1,0 @@
-/Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0316/cmake-build-debug/CMakeFiles/P0316.dir
-/Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0316/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0316/cmake-build-debug/CMakeFiles/rebuild_cache.dir

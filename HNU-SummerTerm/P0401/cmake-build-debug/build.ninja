@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: P0316
+# Project: P0401
 # Configurations: Debug
 # =============================================================================
 
@@ -39,47 +39,47 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0316/cmake-build-debug/
+cmake_ninja_workdir = /Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0401/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target P0316
+# Object build statements for EXECUTABLE target P0401
 
 
 #############################################
-# Order-only phony target for P0316
+# Order-only phony target for P0401
 
-build cmake_object_order_depends_target_P0316: phony || CMakeFiles/P0316.dir
+build cmake_object_order_depends_target_P0401: phony || CMakeFiles/P0401.dir
 
-build CMakeFiles/P0316.dir/main.cpp.o: CXX_COMPILER__P0316_Debug /Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0316/main.cpp || cmake_object_order_depends_target_P0316
-  DEP_FILE = CMakeFiles/P0316.dir/main.cpp.o.d
+build CMakeFiles/P0401.dir/main.cpp.o: CXX_COMPILER__P0401_Debug /Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0401/main.cpp || cmake_object_order_depends_target_P0401
+  DEP_FILE = CMakeFiles/P0401.dir/main.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
-  OBJECT_DIR = CMakeFiles/P0316.dir
-  OBJECT_FILE_DIR = CMakeFiles/P0316.dir
-  TARGET_COMPILE_PDB = CMakeFiles/P0316.dir/
-  TARGET_PDB = P0316.pdb
+  OBJECT_DIR = CMakeFiles/P0401.dir
+  OBJECT_FILE_DIR = CMakeFiles/P0401.dir
+  TARGET_COMPILE_PDB = CMakeFiles/P0401.dir/
+  TARGET_PDB = P0401.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target P0316
+# Link build statements for EXECUTABLE target P0401
 
 
 #############################################
-# Link the executable P0316
+# Link the executable P0401
 
-build P0316: CXX_EXECUTABLE_LINKER__P0316_Debug CMakeFiles/P0316.dir/main.cpp.o
+build P0401: CXX_EXECUTABLE_LINKER__P0401_Debug CMakeFiles/P0401.dir/main.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
-  OBJECT_DIR = CMakeFiles/P0316.dir
+  OBJECT_DIR = CMakeFiles/P0401.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/P0316.dir/
-  TARGET_FILE = P0316
-  TARGET_PDB = P0316.pdb
+  TARGET_COMPILE_PDB = CMakeFiles/P0401.dir/
+  TARGET_FILE = P0401
+  TARGET_PDB = P0401.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0316/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0401/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -90,7 +90,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0316/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0316 -B/Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0316/cmake-build-debug
+  COMMAND = cd /Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0401/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0401 -B/Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0401/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -106,9 +106,9 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0316/cmake-build-debug
+# Folder: /Users/rainchen/CodingArea/Pitaya/HNU-SummerTerm/P0401/cmake-build-debug
 
-build all: phony P0316
+build all: phony P0401
 
 # =============================================================================
 # Built-in targets
