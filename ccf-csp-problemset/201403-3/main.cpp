@@ -51,9 +51,41 @@ int main() {
                         found_command = true;
                         if (opt.at(j).append == 1) {
                             // 有参数
-                            int k{i + 2};
-                            while (input[k] == ' ') {
-                                // 没写完
+                            int k{i + 3};
+                            string append{};
+                            while (true) {
+                                if (input[k] == ' ' or k >= (int) input.length()) {
+                                    break;
+                                }
+                                append += input[k];
+                                k++;
+                            }
+                            clog << "APPEND = " << append << endl;
+                            if (!out.empty()) {
+                                // 检查是否有相同的命令
+                                bool have_same{false};
+                                int pos_same{};
+                                for (int it{}; it < (int) out.size(); ++it) {
+                                    if (out.at(it).find(input.substr(i, 2)) != string::npos) {
+                                        clog << "==FIND==" << endl;
+                                        clog << out.at(it) << endl;
+                                        have_same = true;
+                                        pos_same = i;
+                                        break;
+                                    }
+                                }
+                                if (have_same) {
+                                    // 有相同的命令，参数替换成新的
+                                    out.at(pos_same).clear();
+                                    clog << "OUT.AT(POS_SAME) = " << out.at(pos_same) << endl;
+                                    out.at(pos_same) = input.substr(i, 2) + " " + append;
+                                } else {
+                                    // 没有相同的命令，直接推入
+                                    out.push_back(input.substr(i, 2) + " " + append);
+                                }
+                            } else {
+                                // 空的，直接推入
+                                out.push_back(input.substr(i, 2) + " " + append);
                             }
                         } else {
                             // 无参数，此部分已完成
