@@ -28,6 +28,7 @@ int main() {
             if (total > d) {
                 month--;
                 total -= day[month - 1];
+                break;
             }
         }
         cout << month << endl << d - total << endl;
@@ -41,6 +42,7 @@ int main() {
             if (total > d) {
                 month--;
                 total -= day[month - 1];
+                break;
             }
         }
         cout << month << endl << d - total << endl;
