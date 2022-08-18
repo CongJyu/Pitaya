@@ -35,7 +35,7 @@ int main() {
     while (n--) {
         int ticket{};
         cin >> ticket;
-        
+
     }
     return 0;
 }
