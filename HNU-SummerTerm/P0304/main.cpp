@@ -6,31 +6,18 @@ using namespace std;
 
 int main() {
     ios::sync_with_stdio(false);
-    int n{}, w{};
-    cin >> n >> w;
-    int *a{new int[n]};
+    int change{}, count{}, capacity{}, n{}, max_num{}, min_num{};
+    cin >> n >> capacity;
     for (int i{}; i < n; ++i) {
-        cin >> a[i];
+        cin >> change;
+        count += change;
+        max_num = max(max_num, count);
+        min_num = min(min_num, count);
     }
-    int people{}, origin;
-    bool ok{true};
-    int max_people{};
-    for (int i{}; i < n; ++i) {
-        people += a[i];
-        if (people > w) {
-            ok = false;
-            break;
-        }
-        if (max_people < people) {
-            max_people = people;
-        }
-    }
-    if (!ok) {
-        origin = 0;
+    if (min_num * (-1) > capacity or max_num > capacity) {
+        cout << 0 << endl;
     } else {
-        origin = w - max_people + 1;
+        cout << capacity - max_num + 1 + min_num << endl;
     }
-    cout << origin << endl;
-    delete[] a;
     return 0;
 }
