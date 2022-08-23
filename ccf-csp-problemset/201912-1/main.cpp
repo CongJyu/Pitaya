@@ -13,7 +13,7 @@ int main() {
     cin >> n;
     int i{1}, cnt{1};
     while (true) {
-        if (cnt >= n) {
+        if (cnt > n) {
             break;
         }
         if ((i % 7 == 0) or (to_string(i).find('7') != string::npos)) {
