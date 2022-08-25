@@ -18,7 +18,7 @@ int main() {
             *pa{new long long[g]}, *paa{new long long[g]}, *paar{new long long[g]};
     for (int i{}; i < g; ++i) {
         cin >> f[i] >> a[i] >> na[i] >> pa[i] >> paa[i] >> paar[i];
-        
+
     }
     return 0;
 }
