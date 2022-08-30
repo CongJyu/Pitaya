@@ -1,54 +1,48 @@
 // ccf-csp 201509-3
 
 #include <iostream>
-#include <vector>
+#include <string>
 
 using namespace std;
 
+string mo[110], str_val[110], str_name[110];
+
 int main() {
     ios::sync_with_stdio(false);
-    int n{}, m{};
-    cin >> n >> m;
-    string name, email, address;
-    vector<string> html;
-    while (n--) {
-        string tag;
-        getline(cin, tag);
-        html.push_back(tag);
+    int m{}, n{};
+    cin >> m >> n;
+    cin.get();
+    char temp[110];
+    for (int i{}; i < m; ++i) {
+        gets(temp);
+        mo[i] = temp;
     }
-    while (m--) {
-        string id;
-        cin >> id;
-        if (id == "name") {
-            cin >> name;
-        } else if (id == "email") {
-            cin >> email;
-        } else if (id == "address") {
-            cin >> address;
+    for (int i{}; i < m; ++i) {
+        int pos{(int) mo[i].find("{{ ")};
+        while (mo[i].find("{{ ") != string::npos) {
+            bool find{false};
+            int pos_r{(int) mo[i].find((" }}"))};
+            int len{pos_r - pos + 3};
+            int len_name{pos_r - (pos + 3)};
+            string tmp{mo[i].substr(pos + 3, len_name)};
+            int j;
+            for (j = 0; j < n; ++j) {
+                if (tmp == str_name[j]) {
+                    find = true;
+                    mo[i].replace(pos, len, str_val[j]);
+                    break;
+                }
+            }
+            if (!find) {
+                mo[i].erase(pos, len);
+                pos = (int) mo[i].find("{{ ", pos + 1);
+            } else {
+                pos = (int) mo[i].find("{{ ", pos + str_val[j].size() - 1);
+            }
         }
     }
-    for (int i{}; i < (int) html.size(); ++i) {
-        if (html.at(i).find("name") != string::npos) {
-            cout << " ";
-            for (int j{1}; j < (int) name.length() - 1; ++j) {
-                cout << name[j];
-            }
-        } else if (html.at(i).find("email") != string::npos) {
-            for (int j{1}; j < (int) email.length() - 1; ++j) {
-                cout << email[j];
-            }
-        } else if (html.at(i).find("address") != string::npos) {
-            cout << " ";
-            for (int j{}; j < (int) address.length() - 1; ++j) {
-                cout << address[j];
-            }
-        }
-        if (html.at(i).find("<title>") == string::npos or
-            html.at(i).find("<a href=") == string::npos or
-            html.at(i).find("<p>") == string::npos or
-            html.at(i).find("<h1>") == string::npos) {
-            cout << endl;
-        }
+    for (int i{}; i < m; ++i) {
+        cout << mo[i] << endl;
     }
     return 0;
 }
