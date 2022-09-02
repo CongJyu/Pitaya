@@ -39,17 +39,8 @@ void solution() {
     while (true) {
         cin >> first_hit;
         if (first_hit == '-') {
-            // 一组数据结束
+            // 这组数据结束
             break;
-        } else if (first_hit == 'N') {
-            // 没有打击到任何一个球，也没有球落袋
-            continue;
-        }
-        cin >> first_in;
-        if (first_in == 'r') {
-            // 如果进袋的是红球，输入进袋的红球的数量
-            int red_number{};
-            cin >> red_number;
         }
     }
 }
