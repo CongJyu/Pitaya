@@ -65,11 +65,40 @@ int main() {
                 }
             }
         } else if (op == 1) {
-            if (x1 > x2) {
-                swap(x1, x2);
+            // 填充字符操作
+            cin >> x1 >> y1 >> ch;
+            queue<Point> q1;  // 用队列存要填充的目标点
+            q1.push(Point(x1, y1));
+            int touch[100][100]{0};  // 标记数组
+            touch[x1][y1] = 1;
+            while (!q1.empty()) {
+                Point *tp{&q1.front()};
+                x1 = tp->x;
+                y1 = tp->y;
+                pic[x1][y1] = ch;
+                for (int i{}; i < 4; ++i) {
+                    x2 = x1 + dx[i];
+                    y2 = y1 + dy[i];
+                    if (x2 < 0 or y2 < 0 or x2 >= m or y2 >= n) {
+                        // 超过范围
+                        continue;
+                    }
+                    if (pic[x2][y2] == '+' or pic[x2][y2] == '|' or pic[x2][y2] == '-') {
+                        continue;
+                    } else if (touch[x2][y2] == 0) {
+                        q1.push(Point(x2, y2));
+                        touch[x2][y2] = 1;
+                    }
+                }
+                q1.pop();
             }
-            
         }
+    }
+    for (int j{n - 1}; j >= 0; --j) {
+        for (int i{}; i < m; ++i) {
+            cout << pic[i][j];
+        }
+        cout << endl;
     }
     return 0;
 }
