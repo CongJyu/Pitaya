@@ -1,13 +1,13 @@
 {
 	"compiler-id" : "GNU",
-	"dir-cur-bld" : "/Users/rainchen/CodingSpace/Fortran-Example/example6-4/cmake-build-debug",
-	"dir-cur-src" : "/Users/rainchen/CodingSpace/Fortran-Example/example6-4",
-	"dir-top-bld" : "/Users/rainchen/CodingSpace/Fortran-Example/example6-4/cmake-build-debug",
-	"dir-top-src" : "/Users/rainchen/CodingSpace/Fortran-Example/example6-4",
+	"dir-cur-bld" : "/Users/rainchen/CodingArea/Pitaya/Fortran-Course/Fortran-Example/example6-4/cmake-build-debug",
+	"dir-cur-src" : "/Users/rainchen/CodingArea/Pitaya/Fortran-Course/Fortran-Example/example6-4",
+	"dir-top-bld" : "/Users/rainchen/CodingArea/Pitaya/Fortran-Course/Fortran-Example/example6-4/cmake-build-debug",
+	"dir-top-src" : "/Users/rainchen/CodingArea/Pitaya/Fortran-Course/Fortran-Example/example6-4",
 	"include-dirs" : [],
 	"language" : "Fortran",
 	"linked-target-dirs" : [],
-	"module-dir" : "/Users/rainchen/CodingSpace/Fortran-Example/example6-4/cmake-build-debug",
+	"module-dir" : "/Users/rainchen/CodingArea/Pitaya/Fortran-Course/Fortran-Example/example6-4/cmake-build-debug",
 	"submodule-ext" : ".smod",
 	"submodule-sep" : "@"
 }

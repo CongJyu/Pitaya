@@ -13,24 +13,22 @@ class Vector2D(object):
         r = Vector2D
         r.x = self.x + other.x
         r.y = self.y + other.y
-        return r
+        return str(r.x) + " " + str(r.y)
 
     def __sub__(self, other):
         r = Vector2D
         r.x = self.x - other.x
         r.y = self.y - other.y
-        return r
+        return str(r.x) + " " + str(r.y)
 
     def __mul__(self, other):
         r = Vector2D
         r.x = self.x * other.x
         r.y = self.y * other.y
-        return r
+        return str(r.x) + " " + str(r.y)
 
     def __abs__(self):
         return math.sqrt(self.x ** 2 + self.y ** 2)
-
-    # def __str__(self):
 
 
 a = Vector2D(1, 2)
@@ -39,5 +37,5 @@ print(a + b)
 print(a * b)
 print(b - a)
 print(abs(a))
-# print(str(b))
+print(str(b))
 # print(a.angle(b))

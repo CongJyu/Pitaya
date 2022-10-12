@@ -1,14 +1,12 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja /Users/rainchen/CodingSpace/Fortran-Example/example6-4
--- The Fortran compiler identification is GNU 11.0.0
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/rainchen/CodingArea/Pitaya/Fortran-Course/Fortran-Example/example6-4 -B /Users/rainchen/CodingArea/Pitaya/Fortran-Course/Fortran-Example/example6-4/cmake-build-debug
+-- The Fortran compiler identification is GNU 12.2.0
 -- Checking whether Fortran compiler has -isysroot
 -- Checking whether Fortran compiler has -isysroot - yes
 -- Checking whether Fortran compiler supports OSX deployment target flag
 -- Checking whether Fortran compiler supports OSX deployment target flag - yes
 -- Detecting Fortran compiler ABI info
 -- Detecting Fortran compiler ABI info - done
--- Check for working Fortran compiler: /usr/local/bin/gfortran - skipped
--- Checking whether /usr/local/bin/gfortran supports Fortran 90
--- Checking whether /usr/local/bin/gfortran supports Fortran 90 - yes
+-- Check for working Fortran compiler: /opt/homebrew/bin/gfortran - skipped
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/rainchen/CodingSpace/Fortran-Example/example6-4/cmake-build-debug
+-- Build files have been written to: /Users/rainchen/CodingArea/Pitaya/Fortran-Course/Fortran-Example/example6-4/cmake-build-debug
