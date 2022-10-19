@@ -2,34 +2,46 @@
 
 # Pitaya
 
+- English
+- 粵語（Cantonese）
+
 This is a collection of answers. Only for studying.
 
-Pitaya（火龙果）是一个用于存储高校平时作业代码的仓库，不保证代码可以通过所有测试样例。仅作学习交流使用。如果对您有帮助，请给一个 Star；如果您发现任何问题，欢迎提 Issue 和 Pull Request。
+Pitaya（火龍果）係一個用於存儲高校平時作業代碼嘅倉庫，唔保證代碼可以通過所有測試樣例。僅作學習交流使用。如果對你有幫助，請畀一個 Star；如果你發現咗任何問題，歡迎提出 Issue 同 Pull Request。
 
-## Contents 目录
+## Contents 目錄
 
 The answers to the homework are stored in the following dirs:
 
-答案代码存储在下面几个目录中：
+代碼存儲喺下面幾個目錄里面：
 
 ```shell
+/Circuit-Small-Class-Graphics
 /Fortran-Course
 /HNU-Basic
 /HNU-CG-DSA
 /HNU-CG
 /HNU-PythonCourse
 /HNU-SummerTerm
+/Logic-and-Computer-Design
 /SCUT-Code
+/SCUT-PythonHW
 /SYSU-HW
+/ccf-csp-problemset
+/hw-from-wlara
 ```
 
-## Details 详细
+## Details 詳細
 
-- `Fortran-Course` 目录存放了湖南大学「Fortran 程序设计」课程的练习与例题。
-- `HNU-Basic` 目录存放了湖南大学给转专业同学提供的基础训练作业的答案。
-- `HNU-CG-DSA` 目录存放了湖南大学「数据结构与算法分析 2022」课程的实验代码。
-- `HNU-CG` 目录存放了湖南大学「程序设计2021」课程的练习答案。
-- `HNU-PythonCourse` 目录存放了湖南大学「Python 基础」课程的大作业练习代码。
-- `HNU-SummerTerm` 目录存放了湖南大学夏季学期「程序设计训练2022」课程的答案。
-- `SCUT-Code` 目录存放了华南理工大学 OJ 上的 2021 年部分题目的答案。
-- `SYSU-HW` 目录存放了中山大学「C 语言程序设计」课程的小部分作业。
+- `Fortran-Course` 係湖南大學「Fortran 程式設計」課程練習題。
+- `HNU-Basic` 係湖南大學畀轉專業同學嘅 C++ 基礎訓練題。
+- `HNU-CG-DSA` 係湖南大學「數據結構與算法分析 2022」課程實驗代碼。
+- `HNU-CG` 係湖南大學「程式設計 2021」課程練習答案。
+- `HNU-PythonCourse` 係湖南大學「Python 基礎」課程嘅大作業答案。
+- `HNU-SummerTerm` 係湖南大學「程式設計訓練 2022」課程（小學期）嘅練習代碼。
+- `Logic-and-Computer-Design` 係湖南大學「數字邏輯與計算機設計」課程嘅 Verilog 代碼。
+- `SCUT-Code` 係華南理工大學 Online Judge 上 2021 年部分題目嘅代碼。
+- `SCUT-PythonHW` 係華南理工大學「Python 基礎」課程嘅作業實驗題目。
+- `SYSU-HW` 係中山大學「C 語言程序設計」課程嘅小部分作業代碼。
+- `ccf-csp-problemset` 係「中國計算機學會軟件能力認證」考試題目。
+- `hw-from-wlara` 係我姐妹嘅 Python 課部分作業題目。
