@@ -23,7 +23,6 @@ The answers to the homework are stored in the following dirs:
 /HNU-CG
 /HNU-PythonCourse
 /HNU-SummerTerm
-/Logic-and-Computer-Design
 /SCUT-Code
 /SCUT-PythonHW
 /SYSU-HW
@@ -39,7 +38,6 @@ The answers to the homework are stored in the following dirs:
 - `HNU-CG` 係湖南大學「程式設計 2021」課程練習答案。
 - `HNU-PythonCourse` 係湖南大學「Python 基礎」課程嘅大作業答案。
 - `HNU-SummerTerm` 係湖南大學「程式設計訓練 2022」課程（小學期）嘅練習代碼。
-- `Logic-and-Computer-Design` 係湖南大學「數字邏輯與計算機設計」課程嘅 Verilog 代碼。
 - `SCUT-Code` 係華南理工大學 Online Judge 上 2021 年部分題目嘅代碼。
 - `SCUT-PythonHW` 係華南理工大學「Python 基礎」課程嘅作業實驗題目。
 - `SYSU-HW` 係中山大學「C 語言程序設計」課程嘅小部分作業代碼。
