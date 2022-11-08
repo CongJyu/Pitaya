@@ -43,7 +43,3 @@ The answers to the homework are stored in the following dirs:
 - `SYSU-HW` 係中山大學「C 語言程序設計」課程嘅小部分作業代碼。
 - `ccf-csp-problemset` 係「中國計算機學會軟件能力認證」考試題目。
 - `hw-from-wlara` 係我姐妹嘅 Python 課部分作業題目。
-
-## Support 支持
-
-<a href="https://www.buymeacoffee.com/rainchen" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
