@@ -190,7 +190,78 @@ def answer_2():
         d.save("/Users/rainchen/Desktop/Answer2.svg")
 
 
+def exercise_2_1():
+    elm.style(elm.STYLE_IEC)
+    with schemdraw.Drawing() as d:
+        d += elm.Dot(open=True).label("- b")
+        d += elm.Line().left()
+        d += elm.Dot()
+        d.push()
+        d += elm.Line().left()
+        d += elm.Resistor().up().label("3 Ohm")
+        d += elm.Dot()
+        d.pop()
+        d += elm.SourceV().up().label("5 V")
+        d += elm.Line().left()
+        d += elm.Resistor().up().label("2 Ohm")
+        d += elm.Line().right()
+        d += elm.Line().right()
+        d += elm.Dot(open=True).label("+ a")
+        d.save("/Users/rainchen/Desktop/exercise_2_1.svg")
+
+
+def exercise_2_1_ans():
+    elm.style(elm.STYLE_IEC)
+    with schemdraw.Drawing() as d:
+        d += elm.Dot(open=True).label("- b")
+        d += elm.Line().left()
+        d += elm.SourceV().up().label("5 V")
+        d += elm.Resistor().up().label("2 Ohm")
+        d += elm.Line().right()
+        d += elm.Dot(open=True).label("+ a")
+        d.save("/Users/rainchen/Desktop/exercise_2_1_ans.svg")
+
+
+def exercise_2_2():
+    elm.style(elm.STYLE_IEC)
+    with schemdraw.Drawing() as d:
+        d += elm.Dot(open=True).label("- b")
+        d += elm.Line().left()
+        d += elm.Dot()
+        d.push()
+        d += elm.Line().left()
+        d += elm.SourceI().up().label("5 A")
+        d += elm.Resistor().up().label("2 Ohm")
+        d += elm.Line().right()
+        d += elm.Dot()
+        d.pop()
+        d += elm.Resistor().up().label("3 Ohm")
+        d += elm.Line().up()
+        d += elm.Line().right()
+        d += elm.Dot(open=True).label("+ a")
+        d.save("/Users/rainchen/Desktop/exercise_2_2.svg")
+
+
+def exercise_2_2_ans():
+    elm.style(elm.STYLE_IEC)
+    with schemdraw.Drawing() as d:
+        d += elm.Dot(open=True).label("- b")
+        d += elm.Line().left()
+        d += elm.Dot()
+        d.push()
+        d += elm.Line().left()
+        d += elm.SourceI().up().label("5 A")
+        d += elm.Line().right()
+        d += elm.Dot()
+        d.pop()
+        d += elm.Resistor().up().label("3 Ohm")
+        d += elm.Line().right()
+        d += elm.Dot(open=True).label("+ a")
+        d.save("/Users/rainchen/Desktop/exercise_2_2_ans.svg")
+
+
 def main():
+    """
     ideal_source_v()
     ideal_source_v_eq()
     ideal_source_v2()
@@ -205,6 +276,11 @@ def main():
     exercise_2()
     answer_1()
     answer_2()
+    exercise_2_1()
+    exercise_2_1_ans()
+    """
+    exercise_2_2()
+    exercise_2_2_ans()
 
 
 if __name__ == "__main__":
