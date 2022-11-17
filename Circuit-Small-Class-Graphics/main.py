@@ -260,6 +260,43 @@ def exercise_2_2_ans():
         d.save("/Users/rainchen/Desktop/exercise_2_2_ans.svg")
 
 
+def source_equal_v():
+    elm.style(elm.STYLE_IEC)
+    with schemdraw.Drawing() as d:
+        d += elm.Dot(open=True).label("-")
+        d += elm.Line().left()
+        d += elm.Resistor().up().label("R_0")
+        d += elm.SourceV().up().label("E")
+        d += elm.Line().right()
+        d += elm.Dot(open=True).label("+")
+        d += elm.Line().right()
+        d += elm.Resistor().down().label("R_L")
+        d += elm.Line().down()
+        d += elm.Line().left()
+        d.save("/Users/rainchen/Desktop/source_equal_v.svg")
+
+
+def source_equal_i():
+    elm.style(elm.STYLE_IEC)
+    with schemdraw.Drawing() as d:
+        d += elm.Dot(open=True).label("-")
+        d += elm.Line().left()
+        d += elm.Dot()
+        d.push()
+        d += elm.Line().left()
+        d += elm.SourceI().up().label("I_s")
+        d += elm.Line().right()
+        d += elm.Dot()
+        d.pop()
+        d += elm.Resistor().up().label("R_0")
+        d += elm.Line().right()
+        d += elm.Dot(open=True).label("+")
+        d += elm.Line().right()
+        d += elm.Resistor().down().label("R_L")
+        d += elm.Line().left()
+        d.save("/Users/rainchen/Desktop/source_equal_i.svg")
+
+
 def main():
     """
     ideal_source_v()
@@ -278,9 +315,11 @@ def main():
     answer_2()
     exercise_2_1()
     exercise_2_1_ans()
-    """
     exercise_2_2()
     exercise_2_2_ans()
+    source_equal_v()
+    """
+    source_equal_i()
 
 
 if __name__ == "__main__":
