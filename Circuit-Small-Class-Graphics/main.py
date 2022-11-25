@@ -318,8 +318,8 @@ def main():
     exercise_2_2()
     exercise_2_2_ans()
     source_equal_v()
-    """
     source_equal_i()
+    """
 
 
 if __name__ == "__main__":
