@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/rainchen/CodingSpace/Fortran-Example/example8-1/cmake-build-debug"
+			"value" : "/Users/rainchen/CodingArea/Pitaya/Fortran-Course/Fortran-Example/example8-1/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -79,7 +79,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "21"
+			"value" : "24"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -91,7 +91,55 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "1"
+			"value" : "2"
+		},
+		{
+			"name" : "CMAKE_CODEBLOCKS_COMPILER_ID",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Id string of the compiler for the CodeBlocks IDE. Automatically detected when left empty"
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_CODEBLOCKS_EXECUTABLE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The CodeBlocks executable"
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "CMAKE_CODEBLOCKS_EXECUTABLE-NOTFOUND"
+		},
+		{
+			"name" : "CMAKE_CODEBLOCKS_MAKE_ARGUMENTS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Additional command line arguments when CodeBlocks invokes make. Enter e.g. -j<some_number> to get parallel builds"
+				}
+			],
+			"type" : "STRING",
+			"value" : "-j8"
+		},
+		{
+			"name" : "CMAKE_COLOR_DIAGNOSTICS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Enable colored diagnostics throughout."
+				}
+			],
+			"type" : "BOOL",
+			"value" : "ON"
 		},
 		{
 			"name" : "CMAKE_COMMAND",
@@ -263,7 +311,19 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : ""
+			"value" : "CodeBlocks"
+		},
+		{
+			"name" : "CMAKE_FIND_PACKAGE_REDIRECTS_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake."
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/rainchen/CodingArea/Pitaya/Fortran-Course/Fortran-Example/example8-1/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_Fortran_COMPILER",
@@ -279,7 +339,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/local/bin/gfortran"
+			"value" : "/opt/homebrew/bin/gfortran"
 		},
 		{
 			"name" : "CMAKE_Fortran_COMPILER_AR",
@@ -295,7 +355,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "CMAKE_Fortran_COMPILER_AR-NOTFOUND"
+			"value" : "/opt/homebrew/bin/gcc-ar-12"
 		},
 		{
 			"name" : "CMAKE_Fortran_COMPILER_RANLIB",
@@ -311,7 +371,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "CMAKE_Fortran_COMPILER_RANLIB-NOTFOUND"
+			"value" : "/opt/homebrew/bin/gcc-ranlib-12"
 		},
 		{
 			"name" : "CMAKE_Fortran_FLAGS",
@@ -403,7 +463,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "Ninja"
+			"value" : "Unix Makefiles"
 		},
 		{
 			"name" : "CMAKE_GENERATOR_INSTANCE",
@@ -451,7 +511,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/rainchen/CodingSpace/Fortran-Example/example8-1"
+			"value" : "/Users/rainchen/CodingArea/Pitaya/Fortran-Course/Fortran-Example/example8-1"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -502,12 +562,16 @@
 			"properties" : 
 			[
 				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "Path to a program."
 				}
 			],
-			"type" : "UNINITIALIZED",
-			"value" : "/Applications/CLion.app/Contents/bin/ninja/mac/ninja"
+			"type" : "FILEPATH",
+			"value" : "/usr/bin/make"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -683,7 +747,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk"
+			"value" : "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -775,7 +839,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21"
+			"value" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1014,6 +1078,22 @@
 			"value" : "FALSE"
 		},
 		{
+			"name" : "ProcessorCount_cmd_sysctl",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/sbin/sysctl"
+		},
+		{
 			"name" : "example8_1_BINARY_DIR",
 			"properties" : 
 			[
@@ -1023,7 +1103,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/rainchen/CodingSpace/Fortran-Example/example8-1/cmake-build-debug"
+			"value" : "/Users/rainchen/CodingArea/Pitaya/Fortran-Course/Fortran-Example/example8-1/cmake-build-debug"
 		},
 		{
 			"name" : "example8_1_IS_TOP_LEVEL",
@@ -1047,7 +1127,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/rainchen/CodingSpace/Fortran-Example/example8-1"
+			"value" : "/Users/rainchen/CodingArea/Pitaya/Fortran-Course/Fortran-Example/example8-1"
 		}
 	],
 	"kind" : "cache",

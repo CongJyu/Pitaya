@@ -1,0 +1,1 @@
+/opt/homebrew/bin/gfortran -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk CMakeFiles/example8_1.dir/main.f90.o -o example8_1 
