@@ -1,12 +1,4 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /Users/rainchen/CodingArea/Pitaya/Fortran-Course/Fortran-Example/example8-1 -B /Users/rainchen/CodingArea/Pitaya/Fortran-Course/Fortran-Example/example8-1/cmake-build-debug
--- The Fortran compiler identification is GNU 12.2.0
--- Checking whether Fortran compiler has -isysroot
--- Checking whether Fortran compiler has -isysroot - yes
--- Checking whether Fortran compiler supports OSX deployment target flag
--- Checking whether Fortran compiler supports OSX deployment target flag - yes
--- Detecting Fortran compiler ABI info
--- Detecting Fortran compiler ABI info - done
--- Check for working Fortran compiler: /opt/homebrew/bin/gfortran - skipped
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/rainchen/CodingArea/Pitaya/Fortran-Course/Fortran-Example/example8-1/cmake-build-debug
