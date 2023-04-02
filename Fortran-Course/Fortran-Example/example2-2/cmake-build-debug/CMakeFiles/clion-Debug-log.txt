@@ -1,0 +1,13 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /Users/rainchen/CodingArea/Pitaya/Fortran-Course/Fortran-Example/example2-2 -B /Users/rainchen/CodingArea/Pitaya/Fortran-Course/Fortran-Example/example2-2/cmake-build-debug
+-- The Fortran compiler identification is unknown
+CMake Error at CMakeLists.txt:2 (project):
+  No CMAKE_Fortran_COMPILER could be found.
+
+  Tell CMake where to find the compiler by setting either the environment
+  variable "FC" or the CMake cache entry CMAKE_Fortran_COMPILER to the full
+  path to the compiler, or to the compiler name if it is in the PATH.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/Users/rainchen/CodingArea/Pitaya/Fortran-Course/Fortran-Example/example2-2/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "/Users/rainchen/CodingArea/Pitaya/Fortran-Course/Fortran-Example/example2-2/cmake-build-debug/CMakeFiles/CMakeError.log".

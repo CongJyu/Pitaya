@@ -1,3 +1,0 @@
-ninja_dyndep_version = 1.0
-build CMakeFiles/example2_2.dir/main.f90.o: dyndep
-

@@ -95,6 +95,13 @@
 # endif
 #elif defined(__ABSOFT__)
         PRINT *, 'INFO:compiler[Absoft]'
+#elif defined(__LCC__) && (defined(__GNUC__) || defined(__GNUG__) || defined(__MCST__))
+        PRINT *, 'INFO:compiler[LCC]'
+# define COMPILER_VERSION_MAJOR DEC(1)
+# define COMPILER_VERSION_MINOR DEC(__LCC__ - 100)
+# if defined(__LCC_MINOR__)
+#  define COMPILER_VERSION_PATCH DEC(__LCC_MINOR__)
+# endif
 #elif defined(__GNUC__)
         PRINT *, 'INFO:compiler[GNU]'
 # define COMPILER_VERSION_MAJOR DEC(__GNUC__)
@@ -146,6 +153,13 @@
 # define COMPILER_VERSION_MINOR DEC(__FLANG_MINOR__)
 # if defined(__FLANG_PATCHLEVEL__)
 #  define COMPILER_VERSION_PATCH DEC(__FLANG_PATCHLEVEL__)
+# endif
+#elif defined(__flang__)
+        PRINT *, 'INFO:compiler[LLVMFlang]'
+# define COMPILER_VERSION_MAJOR DEC(__flang_major__)
+# define COMPILER_VERSION_MINOR DEC(__flang_minor__)
+# if defined(__flang_patchlevel__)
+#  define COMPILER_VERSION_PATCH DEC(__flang_patchlevel__)
 # endif
 #elif defined(_AIX) || defined(__AIX) || defined(__AIX__) || defined(__aix) || defined(__aix__)
         PRINT *, 'INFO:compiler[VisualAge]'
