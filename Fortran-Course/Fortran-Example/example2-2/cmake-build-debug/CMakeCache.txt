@@ -63,7 +63,15 @@ CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=/Users/rainchen/CodingArea/Pitaya/Fortran-Course/Fortran-Example/example2-2/cmake-build-debug/CMakeFiles/pkgRedirects
 
 //Fortran compiler
-CMAKE_Fortran_COMPILER:FILEPATH=CMAKE_Fortran_COMPILER-NOTFOUND
+CMAKE_Fortran_COMPILER:FILEPATH=/opt/homebrew/bin/gfortran
+
+//A wrapper around 'ar' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_Fortran_COMPILER_AR:FILEPATH=/opt/homebrew/bin/gcc-ar-12
+
+//A wrapper around 'ranlib' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_Fortran_COMPILER_RANLIB:FILEPATH=/opt/homebrew/bin/gcc-ranlib-12
 
 //Flags used by the Fortran compiler during all build types.
 CMAKE_Fortran_FLAGS:STRING=
@@ -258,6 +266,10 @@ CMAKE_EXPORT_COMPILE_COMMANDS-ADVANCED:INTERNAL=1
 CMAKE_EXTRA_GENERATOR:INTERNAL=CodeBlocks
 //ADVANCED property for variable: CMAKE_Fortran_COMPILER
 CMAKE_Fortran_COMPILER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_Fortran_COMPILER_AR
+CMAKE_Fortran_COMPILER_AR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_Fortran_COMPILER_RANLIB
+CMAKE_Fortran_COMPILER_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_Fortran_FLAGS
 CMAKE_Fortran_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_Fortran_FLAGS_DEBUG

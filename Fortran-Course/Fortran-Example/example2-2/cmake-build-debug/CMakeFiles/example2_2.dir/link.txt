@@ -1,0 +1,1 @@
+/opt/homebrew/bin/gfortran -L/opt/homebrew/opt/ruby@3.1/lib  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk CMakeFiles/example2_2.dir/main.f90.o -o example2_2 
